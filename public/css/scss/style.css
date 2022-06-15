@@ -84,4 +84,19 @@ header > .container > nav > ul > li > a {
   width: calc(50% - 30px);
   margin: 0px 15px 40px 15px;
   /*上右下左*/
+}
+
+.title a {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.date {
+  color: rgb(163, 163, 163);
+}
+
+h2 {
+  font-size: 2em;
+  margin: 60px auto 30px auto;
 }/*# sourceMappingURL=style.css.map */
