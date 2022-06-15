@@ -60,3 +60,15 @@ header>.container>nav>ul>li>a{
 //===============================
 //內容區塊
 //===============================
+
+.img-fluid{
+    width: 100%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap; /*換行*/
+
+}
+.col-4{
+    width: 33.33333% ;
+}
