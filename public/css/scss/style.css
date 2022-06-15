@@ -54,12 +54,34 @@ header > .container > nav > ul > li > a {
   width: 100%;
 }
 
+.img-rounded {
+  border-radius: 8px;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
   /*換行*/
 }
 
+.text-center {
+  text-align: center;
+}
+
+.col-3 {
+  width: calc(25% - 30px);
+  margin: 0px 15px 40px 15px;
+  /*上右下左*/
+}
+
 .col-4 {
-  width: 33.33333%;
+  width: calc(33.3333333333% - 30px);
+  margin: 0px 15px 40px 15px;
+  /*上右下左*/
+}
+
+.col-6 {
+  width: calc(50% - 30px);
+  margin: 0px 15px 40px 15px;
+  /*上右下左*/
 }/*# sourceMappingURL=style.css.map */
