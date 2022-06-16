@@ -50,6 +50,18 @@ header > .container > nav > ul > li > a {
   letter-spacing: 2px;
 }
 
+nav > .container > ul {
+  display: flex;
+  margin: 20px;
+}
+
+nav > .container > ul > li > a {
+  display: block;
+  color: white;
+  background-color: green;
+  padding: 10px;
+}
+
 .img-fluid {
   width: 100%;
 }
