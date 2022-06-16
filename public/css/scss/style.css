@@ -160,4 +160,35 @@ dd > a {
 
 .bon-primary:hover {
   background-color: brown;
+}
+
+.img-wrap {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.img-overlay {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.img-wrap img {
+  vertical-align: top;
+  transition: all 0.5s;
+}
+
+.img-wrap img:hover {
+  transform: scale(1.5);
+}
+
+.icon-new {
+  position: absolute;
+  width: 50px;
+  line-height: 50px;
+  color: aliceblue;
+  border-radius: 100%;
+  left: -25px;
+  top: -25px;
+  background-color: darkcyan;
 }/*# sourceMappingURL=style.css.map */

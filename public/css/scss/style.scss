@@ -187,3 +187,46 @@ dd>a{
 .bon-primary:hover{
     background-color: brown;
 }
+
+
+.text-primary{
+    
+}
+
+
+
+.img-wrap{
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+    }
+
+.img-overlay{
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.img-wrap img{
+    vertical-align: top;
+    transition: all .5s;
+}
+
+.img-wrap img:hover{
+    transform:scale(1.5)
+}
+
+.icon-new{
+    position:absolute;
+    width: 50px;
+    line-height: 50px;
+    color: aliceblue;
+    border-radius: 100%;
+    left:-25px;
+    top: -25px;
+    //下方正中間
+    // bottom:-25px ;
+    // left: 50%;
+    // margin-left: -25px;
+    background-color: darkcyan;
+}
+
