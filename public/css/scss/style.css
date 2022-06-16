@@ -31,8 +31,13 @@ header > .container > h1 > a {
 
 .container {
   margin: auto;
-  width: 90%;
+  width: 100%;
   max-width: 1140px;
+}
+
+.container > div {
+  margin: auto;
+  width: 100%;
 }
 
 header > .container > nav > ul {
@@ -50,16 +55,9 @@ header > .container > nav > ul > li > a {
   letter-spacing: 2px;
 }
 
-nav > .container > ul {
+.container > ul {
   display: flex;
   margin: 20px;
-}
-
-nav > .container > ul > li > a {
-  display: block;
-  color: white;
-  background-color: green;
-  padding: 10px;
 }
 
 .img-fluid {
@@ -98,6 +96,18 @@ nav > .container > ul > li > a {
   /*上右下左*/
 }
 
+.col-8 {
+  width: calc(66.6666666667% - 30px);
+  margin: 0px 15px 40px 15px;
+  /*上右下左*/
+}
+
+.col-9 {
+  width: calc(75.0001875005% - 30px);
+  margin: 0px 15px 40px 15px;
+  /*上右下左*/
+}
+
 .title a {
   color: black;
   font-size: 1.5rem;
@@ -129,4 +139,11 @@ dd {
 
 dd > a {
   color: rgb(136, 136, 136);
+}
+
+.breadcrumb {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
