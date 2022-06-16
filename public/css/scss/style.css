@@ -146,4 +146,13 @@ dd > a {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
+}
+
+.bon-primary {
+  background-color: rgb(197, 144, 74);
+  padding: 10px;
+  display: block;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  color: black;
 }/*# sourceMappingURL=style.css.map */
