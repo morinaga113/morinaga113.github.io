@@ -35,12 +35,6 @@ header > .container > h1 > a {
   max-width: 1140px;
 }
 
-.containers {
-  margin-left: 35%;
-  width: 90%;
-  max-width: 1140px;
-}
-
 header > .container > nav > ul {
   display: flex;
 }
