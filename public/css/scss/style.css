@@ -149,10 +149,15 @@ dd > a {
 }
 
 .bon-primary {
-  background-color: rgb(197, 144, 74);
+  background-color: rgb(226, 147, 29);
   padding: 10px;
   display: block;
   margin-bottom: 15px;
   border-radius: 5px;
-  color: black;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.bon-primary:hover {
+  background-color: brown;
 }/*# sourceMappingURL=style.css.map */

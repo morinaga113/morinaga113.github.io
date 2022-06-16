@@ -1,4 +1,4 @@
-$primay-color:rgb(230, 57, 57) 
+$primary:rgb(226, 147, 29);
 
 *{margin: 0;
     padding:0;
@@ -174,12 +174,16 @@ dd>a{
 // }
 
 .bon-primary{
-background-color: ;
-background-color: rgb(197, 144, 74);
+    background-color: $primary;
     padding: 10px;
     display: block;
     margin-bottom: 15px;
     border-radius: 5px;
-    color:black
-   
+    color:rgb(255, 255, 255);
+    text-align: center;
+    
+}
+
+.bon-primary:hover{
+    background-color: brown;
 }
