@@ -1,232 +1,233 @@
-$primary:rgb(226, 147, 29);
+$primary: rgb(112, 30, 30);
 
-*{margin: 0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-ul,ol{
+ul,
+ol {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-body{
-    margin: 0; 
+body {
+    margin: 0;
 }
 
-
-header{
-   background-color: rgb(44, 44, 44);
-}
-
-
-header>.container>h1{
-padding-top: 20px;
-color: rgb(243, 243, 243);
-}
-
-header>.container>h1>a{
-    color:rgb(243, 243, 243) ;
-}
-
-.container{
+.container {
     margin: auto;
-    width: 100%;
-    max-width: 1140px;   
+    width: 90%;
+    max-width: 1140px;
+    // background-color: rgb(139, 139, 139);
 }
-.container>div{
-    margin: auto;
-    width: 100%;
-    }
 
+// ====================================
+// 頁首
+// ====================================
 
-//===============================
-//頁首
-//===============================
+header {
+    background-color: rgb(255, 249, 249);
+}
 
-header>.container>nav>ul{
+header>.container>h1 {
+    padding-top: 20px;
+    color: $primary
+}
+
+// header>.container>h1>a {
+//     color: $primary;
+// }
+
+header>.container>nav>ul {
     display: flex;
-    // justify-content: space-between;
-
 }
 
-header>.container>nav>ul>li{
-    margin-right: 30px;
+header>.container>nav>ul>li {
+    margin-right: 50px;
 }
 
-header>.container>nav>ul>li>a{
-    line-height: 60px;
-    color: rgb(243, 243, 243);
-    font-size: 1.2em;
-    letter-spacing: 2px;
+header>.container>nav>ul>li>a {
+    line-height: 80px;
+    color: $primary;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
-.container>ul{
-    display: flex;
-    margin: 20px;
-}
+// ====================================
+// 內容區塊
+// ====================================
 
-//===============================
-//內容區塊
-//===============================
-
-.img-fluid{
+//圖片相關
+.img-fluid {
     width: 100%;
 }
 
-.img-rounded{
-    border-radius: 8px;
+.img-radius {
+    border-radius: 6px;
 }
 
-.row{
-    display: flex;
-    flex-wrap: wrap; /*換行*/
+.img-circle {
+    border-radius: 100%;
 }
 
-.text-center{
+//文字相關
+
+.text-center {
     text-align: center;
 }
 
-//四欄式
-.col-3{
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+//區塊樣式
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /*換行*/
+}
+
+// 四欄式
+.col-3 {
     width: calc(100% / 4 - 30px);
     margin: 0px 15px 40px 15px;
-    
-/*上右下左*/
+    /*上右下左*/
 }
-//三欄式
-.col-4{
+
+// 三欄式
+.col-4 {
     width: calc(100% / 3 - 30px);
     margin: 0px 15px 40px 15px;
-/*上右下左*/
+    /*上右下左*/
 }
-//兩欄式
-.col-6{
+
+// 兩欄式
+.col-6 {
     width: calc(100% / 2 - 30px);
     margin: 0px 15px 40px 15px;
-/*上右下左*/
+    /*上右下左*/
 }
 
-.col-8{
+.col-8 {
     width: calc(100% / 1.5 - 30px);
     margin: 0px 15px 40px 15px;
-    
-/*上右下左*/
+    /*上右下左*/
 }
 
-.col-9{
-    width: calc(100% / 1.33333 - 30px);
+.col-9 {
+    width: calc(100% / 1.33333333333 - 30px);
     margin: 0px 15px 40px 15px;
-    // background-color: rgb(143, 216, 143);
-/*上右下左*/
+    /*上右下左*/
 }
 
-
-
-.title a{
-color: black;
-font-size: 1.5rem;
-font-weight: 700;;
+h2 {
+    margin: 40px auto 30px auto;
 }
 
-.date{
-    color: rgb(163, 163, 163);
+.text{
+    color: $primary;
+    font-size: 0.8em;
 }
-h2{
-    font-size: 2em;
-    margin: 60px auto 30px auto;
-}
-//===============================
-//內容區塊
-//===============================
 
-footer{
-    background-color: bisque;
+// ====================================
+// 頁尾區
+// ====================================
+footer {
+    background-color: $primary;
     padding: 40px 0 40px 0;
 }
-dt{
+
+dt {
     font-size: 1.2em;
     margin-bottom: 10px;
-}
-dd{
-    margin-bottom: 4PX;
+    color: rgb(241, 235, 235);
 }
 
-dd>a{
-    color: rgb(136, 136, 136);
+dd {
+    font-size: 0.8em;
+    margin-bottom: 3px;
 }
+
+dd>a {
+    color: rgb(228, 164, 161);
+}
+
+footer p {
+    font-size: 1em;
+    color: rgb(29, 6, 5);
+}
+
+// ====================================
+// index2使用
+// ====================================
 
 .breadcrumb{
- display: flex;
- margin-top: 20px;
- margin-bottom: 20px;
- width: 100%;
-}
-// .w-20{
-//     width: 20%;
-//     background-color: rgb(255, 200, 180);
-// }
-// .w-80{
-//     width: 80%;
-//     background-color: rgb(198, 170, 224);
-// }
-
-.bon-primary{
-    background-color: $primary;
-    padding: 10px;
-    display: block;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    color:rgb(255, 255, 255);
-    text-align: center;
-    
-}
-
-.bon-primary:hover{
-    background-color: brown;
-}
-
-
-.text-primary{
-    
-}
-
-
-
-.img-wrap{
-    position: relative;
-    display: block;
-    margin-bottom: 10px;
+    display: flex;
+    margin: 20px 0 40px 0;
+    width: 100%;
+    }
+    .breadcrumb a{
+        color: rgb(0, 0, 0); ;
     }
 
+    .btn-primary{
+        background-color: $primary;
+        color: rgb(240, 233, 233);
+        display: block;
+        padding: 10px;
+        margin-bottom: 8px;
+        border-radius: 4px;
+        text-align: center;
+    }
+    .btn-primary:hover{
+        background-color: rgb(163, 33, 66);
+    }
+ 
+    .text-primary{
+        color: $primary;
+    }
+
+  ////////////////////////////  
+  .img-wrap{
+    display: block;
+    position:relative;//我是你爸//
+    // background-color: red;
+    margin-bottom: 10px;
+    
+}
 .img-overlay{
-    overflow: hidden;
+    overflow: hidden;//隱//
     border-radius: 8px;
 }
-
 .img-wrap img{
     vertical-align: top;
     transition: all .5s;
 }
-
 .img-wrap img:hover{
-    transform:scale(1.5)
+    transform: scale(1.5); //變形放大//
 }
-
 .icon-new{
-    position:absolute;
-    width: 50px;
-    line-height: 50px;
-    color: aliceblue;
-    border-radius: 100%;
-    left:-25px;
-    top: -25px;
-    //下方正中間
-    // bottom:-25px ;
-    // left: 50%;
-    // margin-left: -25px;
-    background-color: darkcyan;
-}
+position: absolute;//乖兒子//
+background-color:$primary;
+color: aliceblue;
+border-radius: 100%;
+line-height: 50px;
+width: 50px;
+left: -25px;
+top: -25px;
 
+}

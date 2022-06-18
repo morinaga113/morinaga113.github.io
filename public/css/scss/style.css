@@ -4,7 +4,8 @@
   padding: 0;
 }
 
-ul, ol {
+ul,
+ol {
   list-style-type: none;
 }
 
@@ -16,28 +17,19 @@ body {
   margin: 0;
 }
 
+.container {
+  margin: auto;
+  width: 90%;
+  max-width: 1140px;
+}
+
 header {
-  background-color: rgb(44, 44, 44);
+  background-color: rgb(255, 249, 249);
 }
 
 header > .container > h1 {
   padding-top: 20px;
-  color: rgb(243, 243, 243);
-}
-
-header > .container > h1 > a {
-  color: rgb(243, 243, 243);
-}
-
-.container {
-  margin: auto;
-  width: 100%;
-  max-width: 1140px;
-}
-
-.container > div {
-  margin: auto;
-  width: 100%;
+  color: rgb(112, 30, 30);
 }
 
 header > .container > nav > ul {
@@ -45,37 +37,49 @@ header > .container > nav > ul {
 }
 
 header > .container > nav > ul > li {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
 header > .container > nav > ul > li > a {
-  line-height: 60px;
-  color: rgb(243, 243, 243);
-  font-size: 1.2em;
-  letter-spacing: 2px;
-}
-
-.container > ul {
-  display: flex;
-  margin: 20px;
+  line-height: 80px;
+  color: rgb(112, 30, 30);
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .img-fluid {
   width: 100%;
 }
 
-.img-rounded {
-  border-radius: 8px;
+.img-radius {
+  border-radius: 6px;
+}
+
+.img-circle {
+  border-radius: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
   /*換行*/
-}
-
-.text-center {
-  text-align: center;
 }
 
 .col-3 {
@@ -103,68 +107,76 @@ header > .container > nav > ul > li > a {
 }
 
 .col-9 {
-  width: calc(75.0001875005% - 30px);
+  width: calc(75.0000000002% - 30px);
   margin: 0px 15px 40px 15px;
   /*上右下左*/
 }
 
-.title a {
-  color: black;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.date {
-  color: rgb(163, 163, 163);
-}
-
 h2 {
-  font-size: 2em;
-  margin: 60px auto 30px auto;
+  margin: 40px auto 30px auto;
+}
+
+.text {
+  color: rgb(112, 30, 30);
+  font-size: 0.8em;
 }
 
 footer {
-  background-color: bisque;
+  background-color: rgb(112, 30, 30);
   padding: 40px 0 40px 0;
 }
 
 dt {
   font-size: 1.2em;
   margin-bottom: 10px;
+  color: rgb(241, 235, 235);
 }
 
 dd {
-  margin-bottom: 4PX;
+  font-size: 0.8em;
+  margin-bottom: 3px;
 }
 
 dd > a {
-  color: rgb(136, 136, 136);
+  color: rgb(228, 164, 161);
+}
+
+footer p {
+  font-size: 1em;
+  color: rgb(29, 6, 5);
 }
 
 .breadcrumb {
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0 40px 0;
   width: 100%;
 }
 
-.bon-primary {
-  background-color: rgb(226, 147, 29);
-  padding: 10px;
+.breadcrumb a {
+  color: rgb(0, 0, 0);
+}
+
+.btn-primary {
+  background-color: rgb(112, 30, 30);
+  color: rgb(240, 233, 233);
   display: block;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  color: rgb(255, 255, 255);
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 4px;
   text-align: center;
 }
 
-.bon-primary:hover {
-  background-color: brown;
+.btn-primary:hover {
+  background-color: rgb(163, 33, 66);
+}
+
+.text-primary {
+  color: rgb(112, 30, 30);
 }
 
 .img-wrap {
-  position: relative;
   display: block;
+  position: relative;
   margin-bottom: 10px;
 }
 
@@ -184,11 +196,11 @@ dd > a {
 
 .icon-new {
   position: absolute;
-  width: 50px;
-  line-height: 50px;
+  background-color: rgb(112, 30, 30);
   color: aliceblue;
   border-radius: 100%;
+  line-height: 50px;
+  width: 50px;
   left: -25px;
   top: -25px;
-  background-color: darkcyan;
 }/*# sourceMappingURL=style.css.map */
