@@ -30,7 +30,7 @@ body {
 // ====================================
 
 header {
-    background-color: rgb(255, 249, 249);
+    background-color: rgb(252, 241, 241);
 }
 
 header>.container>h1 {
@@ -101,44 +101,59 @@ header>.container>nav>ul>li>a {
     /*換行*/
 }
 
-// 四欄式
-.col-3 {
-    width: calc(100% / 4 - 30px);
-    margin: 0px 15px 40px 15px;
-    /*上右下左*/
+
+
+
+// // 四欄式
+// .col-3 {
+//     width: calc(100% / 4 - 30px);
+//     margin: 0px 15px 40px 15px;
+//     /*上右下左*/
+// }
+
+
+
+@for $i from 1 through 12 {
+    .col-#{$i}{
+        --num: calc(12 / #{$i});
+        width: calc(100% / var(--num) - 30px);
+        margin: 0px 15px 40px 15px;
+    }
 }
 
-// 三欄式
-.col-4 {
-    width: calc(100% / 3 - 30px);
-    margin: 0px 15px 40px 15px;
-    /*上右下左*/
-}
+///////md////////
+@media (min-width:768px){
+    @for $i from 1 through 12 {
+        .col-md-#{$i}{
+            --num: calc(12 / #{$i});
+            width: calc(100% / var(--num) - 30px);
+            margin: 0px 15px 40px 15px;
+        }
+    }
+} // 768px end
 
-// 兩欄式
-.col-6 {
-    width: calc(100% / 2 - 30px);
-    margin: 0px 15px 40px 15px;
-    /*上右下左*/
-}
+///////lg/////////
+@media (min-width:1200px){
+    @for $i from 1 through 12 {
+        .col-lg-#{$i}{
+            --num: calc(12 / #{$i});
+            width: calc(100% / var(--num) - 30px);
+            margin: 0px 15px 40px 15px;
+        }
+    }
+} // 1200
 
-.col-8 {
-    width: calc(100% / 1.5 - 30px);
-    margin: 0px 15px 40px 15px;
-    /*上右下左*/
+@media (min-width:768px){
+.order-md-1{
+    order: -1;
 }
-
-.col-9 {
-    width: calc(100% / 1.33333333333 - 30px);
-    margin: 0px 15px 40px 15px;
-    /*上右下左*/
 }
 
 h2 {
     margin: 40px auto 30px auto;
 }
 
-.text{
+.text {
     color: $primary;
     font-size: 0.8em;
 }
@@ -175,59 +190,128 @@ footer p {
 // index2使用
 // ====================================
 
-.breadcrumb{
+.breadcrumb {
     display: flex;
     margin: 20px 0 40px 0;
     width: 100%;
-    }
-    .breadcrumb a{
-        color: rgb(0, 0, 0); ;
-    }
+}
 
-    .btn-primary{
-        background-color: $primary;
-        color: rgb(240, 233, 233);
-        display: block;
-        padding: 10px;
-        margin-bottom: 8px;
-        border-radius: 4px;
-        text-align: center;
-    }
-    .btn-primary:hover{
-        background-color: rgb(163, 33, 66);
-    }
- 
-    .text-primary{
-        color: $primary;
-    }
+.breadcrumb a {
+    color: rgb(0, 0, 0);
+    ;
+}
 
-  ////////////////////////////  
-  .img-wrap{
+.btn-primary {
+    background-color: $primary;
+    color: rgb(240, 233, 233);
     display: block;
-    position:relative;//我是你爸//
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: rgb(163, 33, 66);
+}
+
+.text-primary {
+    color: $primary;
+}
+
+////////////////////////////  
+.img-wrap {
+    display: block;
+    position: relative; //我是你爸//
     // background-color: red;
     margin-bottom: 10px;
-    
+
 }
-.img-overlay{
-    overflow: hidden;//隱//
+
+.img-overlay {
+    overflow: hidden; //隱//
     border-radius: 8px;
 }
-.img-wrap img{
+
+.img-wrap img {
     vertical-align: top;
     transition: all .5s;
 }
-.img-wrap img:hover{
+
+.img-wrap img:hover {
     transform: scale(1.5); //變形放大//
 }
-.icon-new{
-position: absolute;//乖兒子//
-background-color:$primary;
-color: aliceblue;
-border-radius: 100%;
-line-height: 50px;
-width: 50px;
-left: -25px;
-top: -25px;
 
+.icon-new {
+    position: absolute; //乖兒子//
+    background-color: $primary;
+    color: aliceblue;
+    border-radius: 100%;
+    line-height: 50px;
+    width: 50px;
+    left: -25px;
+    top: -25px;
 }
+
+
+
+// 小於767px以下執行 start 
+@media (max-width:767px){
+    h1{
+        width: 85%;
+        // background-color: green;
+        float: left;
+    }
+    .icon-menu{
+        float: right;
+        width: 15%;
+        display: block;
+        background-color: $primary;
+        color:rgb(241, 231, 231);
+        line-height: 60px;
+        text-align: center;
+    }
+  
+    header > .container > nav{
+        width: 100%;
+        float: left;
+        display: none;
+    }
+    header > .container > nav.active{
+        display: block;
+    }
+
+    header > .container > nav > ul{
+        display: block;
+    }
+    header > .container > nav > ul >li{
+        text-align: center;
+        width: 100%;
+    }
+    header > .container > nav > ul >li>a{
+        display: block;
+        // background-color: aqua;
+    }
+    .overflow-hidden{
+        overflow: hidden;
+    }
+} // max-width 767 end
+
+// 超過768px以上執行 start 
+@media (min-width:768px){
+    .icon-menu{
+        display: none;
+    }
+} // min-width 768 end 
+
+
+
+
+//$i index
+//for迴圈
+//from ghrough 從 1 開始到 3
+// @for $i from 1 through 10{
+//     .fz-#{$i}{
+//         font-size: $i*1em;
+//     }
+// }
