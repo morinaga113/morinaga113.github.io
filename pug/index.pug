@@ -9,22 +9,23 @@ html(lang='en')
   body
     // header start
     // header>.container>h1{MR-BROWN}+nav>ul>li*7>a[href="#"]{文字}
-    header.overflow-hidden
+    header
       .container
-        a.icon-menu(href="#") menu 
-        h1 MR-BROWN
-        nav
-          ul
-            li
-              a(href='index.html') 最新消息
-            li
-              a(href='#') 門市資訊
-            li
-              a(href='index3.html')  嚴選商品
-            li
-              a(href='#') 咖啡豆專區
-            li
-              a(href='#') 線上購物
+        .row.flex-space-between
+          h1 MR-BROWN
+          a.icon-menu(href="#") menu 
+          nav
+            ul
+              li
+                a(href='index.html') 最新消息
+              li
+                a(href='#') 門市資訊
+              li
+                a(href='index3.html')  嚴選商品
+              li
+                a(href='#') 咖啡豆專區
+              li
+                a(href='#') 線上購物
     // header end
     img.img-fluid(src='public/images/drink-g52a8ae704_1920.jpg' alt='')
     // content start

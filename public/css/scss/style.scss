@@ -33,7 +33,7 @@ header {
     background-color: rgb(252, 241, 241);
 }
 
-header>.container>h1 {
+header>.container h1 {
     padding-top: 20px;
     color: $primary
 }
@@ -42,15 +42,16 @@ header>.container>h1 {
 //     color: $primary;
 // }
 
-header>.container>nav>ul {
+header>.container nav>ul {
     display: flex;
 }
 
-header>.container>nav>ul>li {
+header>.container nav>ul>li {
     margin-right: 50px;
+
 }
 
-header>.container>nav>ul>li>a {
+header>.container nav>ul>li>a {
     line-height: 80px;
     color: $primary;
     font-size: 1.1em;
@@ -253,14 +254,15 @@ footer p {
     top: -25px;
 }
 
-
-
+.flex-space-between{
+    justify-content: space-between;
+}
 // 小於767px以下執行 start 
 @media (max-width:767px){
     h1{
         width: 85%;
         // background-color: green;
-        float: left;
+        // float: left;
     }
     .icon-menu{
         float: right;
@@ -271,30 +273,50 @@ footer p {
         line-height: 60px;
         text-align: center;
     }
-  
-    header > .container > nav{
-        width: 100%;
-        float: left;
-        display: none;
+
+    header{
+        position: relative;
     }
-    header > .container > nav.active{
+  
+    header > .container nav{
+        width: 100%;
+        position:absolute ;
+        top: 57px;
+        background-color: rgb(252, 241, 241);
+        // float: left;
+        // display: none;
+    }
+    
+    // nav {
+    //     left: -100vw;
+    //     transition: all 0.3s;
+    //   }
+    
+    //   .icon-menu:hover + nav {
+    //     left: 0px;
+    //   }
+    
+
+    header > .container  nav.active{
         display: block;
     }
 
-    header > .container > nav > ul{
+    header > .container  nav > ul{
         display: block;
     }
-    header > .container > nav > ul >li{
+    header > .container  nav > ul >li{
         text-align: center;
         width: 100%;
+        border-bottom: 1px solid $primary;
     }
-    header > .container > nav > ul >li>a{
+    header > .container  nav > ul >li>a{
         display: block;
-        // background-color: aqua;
+        
     }
-    .overflow-hidden{
-        overflow: hidden;
-    }
+    // .overflow-hidden{
+    //     overflow: hidden;
+    // }
+
 } // max-width 767 end
 
 // 超過768px以上執行 start 

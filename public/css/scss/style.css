@@ -27,20 +27,20 @@ header {
   background-color: rgb(252, 241, 241);
 }
 
-header > .container > h1 {
+header > .container h1 {
   padding-top: 20px;
   color: rgb(112, 30, 30);
 }
 
-header > .container > nav > ul {
+header > .container nav > ul {
   display: flex;
 }
 
-header > .container > nav > ul > li {
+header > .container nav > ul > li {
   margin-right: 50px;
 }
 
-header > .container > nav > ul > li > a {
+header > .container nav > ul > li > a {
   line-height: 80px;
   color: rgb(112, 30, 30);
   font-size: 1.1em;
@@ -398,10 +398,13 @@ footer p {
   top: -25px;
 }
 
+.flex-space-between {
+  justify-content: space-between;
+}
+
 @media (max-width: 767px) {
   h1 {
     width: 85%;
-    float: left;
   }
 
   .icon-menu {
@@ -414,31 +417,33 @@ footer p {
     text-align: center;
   }
 
-  header > .container > nav {
+  header {
+    position: relative;
+  }
+
+  header > .container nav {
     width: 100%;
-    float: left;
-    display: none;
+    position: absolute;
+    top: 57px;
+    background-color: rgb(252, 241, 241);
   }
 
-  header > .container > nav.active {
+  header > .container nav.active {
     display: block;
   }
 
-  header > .container > nav > ul {
+  header > .container nav > ul {
     display: block;
   }
 
-  header > .container > nav > ul > li {
+  header > .container nav > ul > li {
     text-align: center;
     width: 100%;
+    border-bottom: 1px solid rgb(112, 30, 30);
   }
 
-  header > .container > nav > ul > li > a {
+  header > .container nav > ul > li > a {
     display: block;
-  }
-
-  .overflow-hidden {
-    overflow: hidden;
   }
 }
 @media (min-width: 768px) {
