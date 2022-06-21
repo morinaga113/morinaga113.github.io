@@ -27,22 +27,22 @@ header {
   background-color: rgb(252, 241, 241);
 }
 
-header > .container > h1 {
+header > .container h1 {
   padding-top: 20px;
   color: rgb(112, 30, 30);
 }
 
-header > .container > nav > ul {
+header > .container nav > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header > .container > nav > ul > li {
+header > .container nav > ul > li {
   margin-right: 50px;
 }
 
-header > .container > nav > ul > li > a {
+header > .container nav > ul > li > a {
   line-height: 80px;
   color: rgb(112, 30, 30);
   font-size: 1.1em;
@@ -50,6 +50,68 @@ header > .container > nav > ul > li > a {
   letter-spacing: 1px;
 }
 
+@media (min-width: 768px) {
+  header > .container nav {
+    width: 100%;
+  }
+
+  header > .container nav > ul > li {
+    position: relative;
+  }
+
+  header > .container nav > ul > li:hover .submenu {
+    display: block;
+  }
+
+  .submenu {
+    position: absolute;
+    background-color: rgb(252, 241, 241);
+    width: 100%;
+    left: 0PX;
+    top: 80px;
+    padding: 10px;
+    padding-right: 10px;
+    display: none;
+  }
+
+  .submenu > li {
+    line-height: 40px;
+  }
+
+  .submenu > li > a {
+    color: rgb(112, 30, 30);
+  }
+
+  header {
+    position: relative;
+  }
+
+  header h1 {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-55%);
+            transform: translateX(-55%);
+    padding-top: 0px;
+  }
+
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  header > .container nav > ul > li {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  header > .container nav > ul > li:nth-child(2) {
+    margin-right: 220px;
+  }
+}
 .img-fluid {
   width: 100%;
 }
@@ -409,10 +471,15 @@ footer p {
   top: -25px;
 }
 
+.flex-space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 @media (max-width: 767px) {
   h1 {
     width: 85%;
-    float: left;
   }
 
   .icon-menu {
@@ -425,31 +492,62 @@ footer p {
     text-align: center;
   }
 
-  header > .container > nav {
+  header {
+    position: relative;
+  }
+
+  header > .container nav {
     width: 100%;
-    float: left;
-    display: none;
+    position: absolute;
+    top: 60px;
+    background-color: rgb(252, 241, 241);
   }
 
-  header > .container > nav.active {
+  nav {
+    left: -100vw;
+    -webkit-transition: left 0.3s;
+    transition: left 0.3s;
+  }
+
+  .icon-menu:hover + nav {
+    left: 0px;
+  }
+
+  header > .container nav.active {
     display: block;
   }
 
-  header > .container > nav > ul {
+  header > .container nav > ul {
     display: block;
   }
 
-  header > .container > nav > ul > li {
+  header > .container nav > ul > li {
     text-align: center;
     width: 100%;
+    border-bottom: 1px solid rgb(112, 30, 30);
   }
 
-  header > .container > nav > ul > li > a {
+  header > .container nav > ul > li > a {
     display: block;
   }
 
-  .overflow-hidden {
-    overflow: hidden;
+  .submenu {
+    display: none;
+    background-color: rgb(112, 30, 30);
+  }
+
+  header > .container nav > ul > li:hover .submenu {
+    display: block;
+  }
+
+  .submenu > li {
+    line-height: 60px;
+    border-bottom: 1px sold rgb(250, 241, 241);
+  }
+
+  .submenu > li > a {
+    color: rgb(250, 235, 235);
+    display: block;
   }
 }
 @media (min-width: 768px) {
