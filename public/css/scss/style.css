@@ -424,8 +424,16 @@ footer p {
   header > .container nav {
     width: 100%;
     position: absolute;
-    top: 57px;
+    top: 60px;
     background-color: rgb(252, 241, 241);
+  }
+
+  nav {
+    transition: left 0.3s;
+  }
+
+  .icon-menu:hover + h1 + nav {
+    left: 0px;
   }
 
   header > .container nav.active {
@@ -443,6 +451,20 @@ footer p {
   }
 
   header > .container nav > ul > li > a {
+    display: block;
+  }
+
+  .submenu {
+    background-color: aqua;
+  }
+
+  .submenu > li {
+    line-height: 60px;
+    border-bottom: 1px sold black;
+  }
+
+  .submenu > li > a {
+    color: black;
     display: block;
   }
 }
