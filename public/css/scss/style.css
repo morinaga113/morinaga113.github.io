@@ -18,8 +18,8 @@ a {
 }
 
 header {
-  background-image: url(public/images/a01.jpg);
-  height: 150px;
+  background-image: url("public/images/a01.jpg");
+  height: 170px;
 }
 
 header > .container nav > ul {
