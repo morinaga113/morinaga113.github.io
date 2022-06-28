@@ -1,1 +1,0 @@
-# morinaga113.github.io

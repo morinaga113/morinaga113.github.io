@@ -1,407 +1,71 @@
-$primary: rgb(112, 30, 30);
-
 * {
     margin: 0;
     padding: 0;
 }
 
-ul,
-ol {
-    list-style-type: none;
+ul {
+    list-style: none;
 }
 
 a {
     text-decoration: none;
 }
 
-body {
-    margin: 0;
-}
-
+// body{
+//     margin: 0;
+// }
 .container {
     margin: auto;
     width: 90%;
-    max-width: 1140px;
-    // background-color: rgb(139, 139, 139);
+    max-width: 1440px;
 }
 
-// ====================================
+//====================================
 // 頁首
 // ====================================
-
 header {
-    background-color: rgb(252, 241, 241);
+    // background-color: rgb(138, 138, 138);
+        background-image: url( public/images/a01.jpg);
+    height: 150px;
 }
-
-header>.container h1 {
-    padding-top: 20px;
-    color: $primary
-}
-
-// header>.container>h1>a {
-//     color: $primary;
-// }
 
 header>.container nav>ul {
-    display: flex;
+        display: flex;
 }
 
 header>.container nav>ul>li {
-    margin-right: 50px;
-
+    margin-right: 60px;
+    margin-top: 65px;
+    
 }
 
 header>.container nav>ul>li>a {
     line-height: 80px;
-    color: $primary;
-    font-size: 1.1em;
-    font-weight: bold;
+    color: rgb(244, 236, 224);
+    font-size: 16px;
     letter-spacing: 1px;
+    
 }
-@media (min-width:768px){
-    header>.container nav{
-        width: 100%;
+//====================================
+// 定位
+// ====================================
+header{
+    position: relative;//父
+}
+
+header img{
+    width: 72px;
+    position: absolute;//兒
+    left: 50%;
+    top: 50px;
+    transform:translateX(-50%);
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
     }
-    header>.container nav>ul>li{
-        position: relative;
-    }
-    header>.container nav>ul>li:hover .submenu{
-        display: block;
-    }
-   
-     .submenu{
-        position:absolute;
-        background-color: rgb(252, 241, 241);
-        width: 100%;
-        left: 0PX;
-        // bottom: 0px;
-        top: 80px;
-        padding: 10px;
-        padding-right: 10px;
-        display: none;
-    }
-    
-    .submenu>li{
-        line-height: 40px;
-    }
-    .submenu>li>a{
-        color: $primary;
-    }
-    header{
-        position: relative;
-    }
-    
-    header h1{
-        position: absolute;
-        left:50%;
-        transform:translateX(-55%);
-        // margin-left: -102px;
-        // background-color: rgb(0, 255, 42);
-        padding-top: 0px;
-    }
-    header nav{
-        display: flex;
-        justify-content: center;
-    }
-    header>.container nav>ul>li{
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-    header>.container nav>ul>li:nth-child(2){
+
+header>.container nav>ul>li:nth-child(3){
         margin-right: 220px;
             }
-
-
-}
-// ====================================
-// 內容區塊
-// ====================================
-
-//圖片相關
-.img-fluid {
-    width: 100%;
-}
-
-.img-radius {
-    border-radius: 6px;
-}
-
-.img-circle {
-    border-radius: 100%;
-}
-
-//文字相關
-
-.text-center {
-    text-align: center;
-}
-
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.text-justify {
-    text-align: justify;
-}
-
-//區塊樣式
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    /*換行*/
-}
-
-
-
-
-// // 四欄式
-// .col-3 {
-//     width: calc(100% / 4 - 30px);
-//     margin: 0px 15px 40px 15px;
-//     /*上右下左*/
-// }
-
-
-
-@for $i from 1 through 12 {
-    .col-#{$i}{
-        --num: calc(12 / #{$i});
-        width: calc(100% / var(--num) - 30px);
-        margin: 0px 15px 40px 15px;
-    }
-}
-
-///////md////////
-@media (min-width:768px){
-    @for $i from 1 through 12 {
-        .col-md-#{$i}{
-            --num: calc(12 / #{$i});
-            width: calc(100% / var(--num) - 30px);
-            margin: 0px 15px 40px 15px;
-        }
-    }
-} // 768px end
-
-///////lg/////////
-@media (min-width:1200px){
-    @for $i from 1 through 12 {
-        .col-lg-#{$i}{
-            --num: calc(12 / #{$i});
-            width: calc(100% / var(--num) - 30px);
-            margin: 0px 15px 40px 15px;
-        }
-    }
-} // 1200
-
-@media (min-width:768px){
-.order-md-1{
-    order: -1;
-}
-}
-
-h2 {
-    margin: 40px auto 30px auto;
-}
-
-.text {
-    color: $primary;
-    font-size: 0.8em;
-}
-
-// ====================================
-// 頁尾區
-// ====================================
-footer {
-    background-color: $primary;
-    padding: 40px 0 40px 0;
-}
-
-dt {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: rgb(241, 235, 235);
-}
-
-dd {
-    font-size: 0.8em;
-    margin-bottom: 3px;
-}
-
-dd>a {
-    color: rgb(228, 164, 161);
-}
-
-footer p {
-    font-size: 1em;
-    color: rgb(29, 6, 5);
-}
-
-// ====================================
-// index2使用
-// ====================================
-
-.breadcrumb {
-    display: flex;
-    margin: 20px 0 40px 0;
-    width: 100%;
-}
-
-.breadcrumb a {
-    color: rgb(0, 0, 0);
-    ;
-}
-
-.btn-primary {
-    background-color: $primary;
-    color: rgb(240, 233, 233);
-    display: block;
-    padding: 10px;
-    margin-bottom: 8px;
-    border-radius: 4px;
-    text-align: center;
-}
-
-.btn-primary:hover {
-    background-color: rgb(163, 33, 66);
-}
-
-.text-primary {
-    color: $primary;
-}
-
-////////////////////////////  
-.img-wrap {
-    display: block;
-    position: relative; //我是你爸//
-    // background-color: red;
-    margin-bottom: 10px;
-
-}
-
-.img-overlay {
-    overflow: hidden; //隱//
-    border-radius: 8px;
-}
-
-.img-wrap img {
-    vertical-align: top;
-    transition: all .5s;
-}
-
-.img-wrap img:hover {
-    transform: scale(1.5); //變形放大//
-}
-
-.icon-new {
-    position: absolute; //乖兒子//
-    background-color: $primary;
-    color: aliceblue;
-    border-radius: 100%;
-    line-height: 50px;
-    width: 50px;
-    left: -25px;
-    top: -25px;
-}
-
-.flex-space-between{
-    justify-content: space-between;
-}
-// 小於767px以下執行 start 
-@media (max-width:767px){
-    h1{
-        width: 85%;
-        // background-color: green;
-        // float: left;
-    }
-    .icon-menu{
-        float: right;
-        width: 15%;
-        display: block;
-        background-color: $primary;
-        color:rgb(241, 231, 231);
-        line-height: 60px;
-        text-align: center;
-    }
-
-    header{
-        position: relative;
-    }
-  
-    header > .container nav{
-        // left: 0;
-        width: 100%;
-        position:absolute ;
-        top: 60px;
-        background-color: rgb(252, 241, 241);
-        // float: left;
-        // display: none;
-    }
-    
-    nav{
-        left:-100vw;
-        transition:left .3s;
-      }
-      .icon-menu:hover + nav{
-        left:0px;
-      }
-    
-
-    header > .container  nav.active{
-        display: block;
-    }
-
-    header > .container  nav > ul{
-        display: block;
-    }
-    header > .container  nav > ul >li{
-        text-align: center;
-        width: 100%;
-        border-bottom: 1px solid $primary;
-    }
-    header > .container  nav > ul >li>a{
-        display: block;
-        
-    }
-  
-    .submenu{
-        display: none;
-        background-color:$primary;
-    }
-    header > .container  nav > ul > li:hover .submenu{
-        display: block;
-    }
-
-    .submenu>li{
-        line-height: 60px;
-        border-bottom: 1px sold rgb(250, 241, 241);
-    }
-    .submenu>li>a{
-        color: rgb(250, 235, 235);
-        display: block;
-    }
-
-} // max-width 767 end
-
-// 超過768px以上執行 start 
-@media (min-width:768px){
-    .icon-menu{
-        display: none;
-    }
-} // min-width 768 end 
-
-
-
-
-//$i index
-//for迴圈
-//from ghrough 從 1 開始到 3
-// @for $i from 1 through 10{
-//     .fz-#{$i}{
-//         font-size: $i*1em;
-//     }
-// }
