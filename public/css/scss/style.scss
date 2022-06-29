@@ -17,7 +17,44 @@ a {
 .container {
     margin: auto;
     width: 90%;
-    max-width: 1440px;
+    max-width: 1140px;
+}
+//文字相關
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+//圖片相關
+.img-fluid {
+    width: 100%;
+}
+
+.img-radius {
+    border-radius: 6px;
+}
+
+.img-circle {
+    border-radius: 100%;
+}
+
+//區塊樣式
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /*換行*/
 }
 
 //====================================
@@ -77,11 +114,31 @@ header>.container nav>ul>li:nth-child(3) {
 
     margin-right: 220px;
 }
+// ====================================
+// 包套區
+// ====================================
+.container h2{
+    margin-top: 90px;
+}
+.container .col-6{
+    // background-color: rgb(150, 231, 191);
+    margin-top: 90px;
+    text-align: center;
+}
+.container .col-6>h4{
+    margin-top: 47px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.container .col-6>h5{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.container .col-6>hr{
+    margin-bottom: 20px;
+    width: 192px;
 
-
-
-
-
+}
 
 // ====================================
 // 頁尾區
@@ -133,31 +190,11 @@ footer p {
     margin-top: 50px;
 }
 
-//區塊樣式
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    /*換行*/
-}
 
-//圖片相關
-.img-fluid {
-    width: 100%;
-}
 
-.img-radius {
-    border-radius: 6px;
-}
 
-.img-circle {
-    border-radius: 100%;
-}
 
-.img-size {
-    width: 100px;
-    
-}
 
 
 
@@ -176,3 +213,4 @@ footer p {
         margin: 0px 15px 40px 15px;
     }
 }
+

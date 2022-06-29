@@ -15,7 +15,41 @@ a {
 .container {
   margin: auto;
   width: 90%;
-  max-width: 1440px;
+  max-width: 1140px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.img-radius {
+  border-radius: 6px;
+}
+
+.img-circle {
+  border-radius: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /*換行*/
 }
 
 header {
@@ -62,6 +96,31 @@ header > .container nav > ul > li:nth-child(3) {
   margin-right: 220px;
 }
 
+.container h2 {
+  margin-top: 90px;
+}
+
+.container .col-6 {
+  margin-top: 90px;
+  text-align: center;
+}
+
+.container .col-6 > h4 {
+  margin-top: 47px;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.container .col-6 > h5 {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.container .col-6 > hr {
+  margin-bottom: 20px;
+  width: 192px;
+}
+
 footer {
   background-image: url(../..//images/底部.jpg);
   background-size: cover;
@@ -103,28 +162,6 @@ footer p {
   color: rgb(173, 173, 173);
   font-size: 6px;
   margin-top: 50px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  /*換行*/
-}
-
-.img-fluid {
-  width: 100%;
-}
-
-.img-radius {
-  border-radius: 6px;
-}
-
-.img-circle {
-  border-radius: 100%;
-}
-
-.img-size {
-  width: 100px;
 }
 
 .col-1 {
