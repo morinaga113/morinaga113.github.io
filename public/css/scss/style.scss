@@ -24,19 +24,29 @@ a {
 // 頁首
 // ====================================
 header {
-    // background-color: rgb(255, 94, 94);
-        background-image: url( 'public/images/a01.jpg');
-    height: 170px;
+    // background-color: rgb(83, 83, 83);
+    background-image: url(../../images/a01.jpg);
+    height: 150px;
+    background-size: cover;
+}
+
+header nav {
+    margin: auto;
+
 }
 
 header>.container nav>ul {
-        display: flex;
+    display: flex;
+    margin-left: 20px;
+    // background-color: rgb(100, 100, 100);
+
 }
 
 header>.container nav>ul>li {
     margin-right: 60px;
     margin-top: 65px;
-    
+
+
 }
 
 header>.container nav>ul>li>a {
@@ -44,28 +54,125 @@ header>.container nav>ul>li>a {
     color: rgb(244, 236, 224);
     font-size: 16px;
     letter-spacing: 1px;
-    
+
 }
+
 //====================================
 // 定位
 // ====================================
-header{
-    position: relative;//父
+header {
+    position: relative; //父
 }
 
-header img{
+header img {
     width: 72px;
-    position: absolute;//兒
+    height: 66px;
+    position: absolute; //兒
     left: 50%;
     top: 50px;
-    transform:translateX(-50%);
+    transform: translateX(-50%);
 }
 
-header nav{
-    display: flex;
-    justify-content: center;
-    }
+header>.container nav>ul>li:nth-child(3) {
 
-header>.container nav>ul>li:nth-child(3){
-        margin-right: 220px;
-            }
+    margin-right: 220px;
+}
+//====================================
+// 內容
+// ====================================
+
+
+// ====================================
+// 頁尾區
+// ====================================
+footer {
+    // background-color: rgb(122, 122, 122);
+    background-image: url(../..//images/底部.jpg);
+    background-size: cover;
+    height: 402px;
+
+}
+
+footer .container>a>img {
+    width: 72px;
+    height: 66px;
+    margin-top: 60px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+footer div {
+    // background-color: rgb(100, 134, 134);
+    margin-left: 41%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+footer a>img {
+    // background-color: rgb(0, 0, 0);
+    width: 25px;
+
+    margin-right: 33px;
+}
+
+footer h4 {
+    text-align: center;
+    color: rgb(244, 236, 224);
+    line-height: 20px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+footer p {
+    text-align: center;
+    color: rgb(173, 173, 173);
+    font-size: 6px;
+    margin-top: 50px;
+}
+
+//區塊樣式
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /*換行*/
+}
+
+//圖片相關
+.img-fluid {
+    width: 100%;
+}
+
+.img-radius {
+    border-radius: 6px;
+}
+
+.img-circle {
+    border-radius: 100%;
+}
+
+.img-size {
+    width: 100px;
+    
+}
+
+
+
+// 欄位
+// // 四欄式
+// .col-3 {
+//     width: calc(100% / 4 - 30px);
+//     margin: 0px 15px 40px 15px;
+//     /*上右下左*/
+// }
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        --num: calc(12 / #{$i});
+        width: calc(100% / var(--num) - 30px);
+        margin: 0px 15px 40px 15px;
+    }
+}
