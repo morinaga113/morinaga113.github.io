@@ -1,0 +1,18 @@
+.dress .row {
+  margin: 50px 30px 50px 30px;
+  justify-content: space-around;
+}
+
+.dress .row > div > a > p {
+  line-height: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+body {
+  background-image: none;
+}
+
+.margin-top {
+  margin-top: 10px;
+}/*# sourceMappingURL=dress.css.map */
