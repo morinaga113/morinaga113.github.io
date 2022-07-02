@@ -11,6 +11,7 @@ a {
     text-decoration: none;
 }
 
+
 // body{
 //     margin: 0;
 // }
@@ -20,7 +21,7 @@ a {
     max-width: 1440px;
 }
 
-.max-width{
+.max-width {
     width: 1100px;
 }
 
@@ -51,32 +52,39 @@ a {
     }
 }
 
-@media (min-width:768px){
+@media (min-width:768px) {
     @for $i from 1 through 12 {
-        .col-md-#{$i}{
+        .col-md-#{$i} {
             --num: calc(12 / #{$i});
             width: calc(100% / var(--num) - 30px);
             margin: 0px 15px 40px 15px;
         }
     }
-} // 768px end
+}
 
-@media (min-width:1200px){
+// 768px end
+
+@media (min-width:1200px) {
     @for $i from 1 through 12 {
-        .col-lg-#{$i}{
+        .col-lg-#{$i} {
             --num: calc(12 / #{$i});
             width: calc(100% / var(--num) - 30px);
             margin: 0px 15px 40px 15px;
         }
     }
-} // 1200px end
+}
+
+// 1200px end
 //====================================
 // 頁首
 // ====================================
+
+
 header {
     // background-color: rgb(83, 83, 83);
     background-image: url(../../images/a01.jpg);
-    // height: 150px;
+    width: 100%;
+    height: 150px;
     background-size: cover;
     background-position: center;
     position: relative; //父/   
@@ -84,7 +92,7 @@ header {
 
 header img {
     width: 72px;
-    height: 66px;
+    // height: 66px;
     position: absolute; //兒
     left: 50%;
     top: 50px;
@@ -93,15 +101,15 @@ header img {
 
 header nav {
     margin: auto;
-     
+
 }
 
 header>.container nav>ul {
-    
+
     display: flex;
     margin-left: 20px;
     // background-color: rgb(100, 100, 100);
-    
+
 }
 
 header>.container nav>ul>li {
@@ -114,37 +122,42 @@ header>.container nav>ul>li>a {
     color: rgb(244, 236, 224);
     font-size: 16px;
     letter-spacing: 1px;
-    
+
 }
 
 header>.container nav>ul>li:nth-child(3) {
 
     margin-right: 220px;
 }
+
 // ====================================
 // 輪播區
 // ====================================
-.basemap{
+.basemap {
     background-color: rgb(255, 255, 255);
     height: 1020px;
 }
-.basemap h2{
+
+.basemap h2 {
     padding-top: 90px;
     text-align: center;
     letter-spacing: 1.5px;
     margin-bottom: 50px;
     // background-color: aqua;
 }
-.basemap .row{
-   // justify-content: center;
-   margin-left:37.5%;  
-}   
-.basemap .row>ul{
+
+.basemap .row {
+    // justify-content: center;
+    margin-left: 37.5%;
+}
+
+.basemap .row>ul {
     margin-right: 80px;
     margin-bottom: 80px;
-    
+
 }
-.basemap .row>ul>li>a{
+
+.basemap .row>ul>li>a {
     padding: 15px;
     font-size: 15px;
     color: rgb(0, 0, 0);
@@ -153,16 +166,18 @@ header>.container nav>ul>li:nth-child(3) {
 
 .img-overlay {
     display: flex;
-    overflow:auto; //隱//
+    overflow: auto; //隱//
     // background-color: aqua;
     height: 570px;
 }
-.basemap h5{
+
+.basemap h5 {
     margin-top: 50px;
     text-align: center;
-    
+
 }
-.basemap h5>a{
+
+.basemap h5>a {
     border: 1px solid rgb(0, 0, 0);
     padding: 10px 20px 10px 20px;
     color: black;
@@ -172,12 +187,14 @@ header>.container nav>ul>li:nth-child(3) {
 // ====================================
 // 包套區
 // ====================================
-.container h2{
+
+.container h2 {
     letter-spacing: 1.5px;
     margin-top: 90px;
     text-align: center;
 }
-.container .col-6{
+
+.container .col-md-6 {
     // background-color: rgb(150, 231, 191);
     margin-top: 90px;
     text-align: center;
@@ -185,22 +202,26 @@ header>.container nav>ul>li:nth-child(3) {
     // max-width: 500px;
 
 }
-.container .col-6>h4{
+
+.container .col-md-6>h4 {
     margin-top: 47px;
     margin-bottom: 10px;
     font-size: 22px;
 }
-.container .col-6>h5{
+
+.container .col-md-6>h5 {
     font-size: 15px;
     margin-bottom: 25px;
 }
-.container .col-6>hr{
+
+.container .col-md-6>hr {
     display: block;
     width: 190px;
     margin-bottom: 25px;
-    margin-left:36.5%;
+    margin-left: 32%;
 }
-.container .col-6>p>span{
+
+.container .col-md-6>p>span {
     font-size: 32px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 6px;
@@ -208,10 +229,10 @@ header>.container nav>ul>li:nth-child(3) {
     // background-color: aqua;
 }
 
-.container .col-6>p>small{
+.container .col-md-6>p>small {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
-    }
+}
 
 // ====================================
 // 頁尾區
@@ -239,7 +260,7 @@ footer div {
     margin-left: 41%;
     margin-top: 40px;
     margin-bottom: 30px;
- 
+
 }
 
 footer a>img {
@@ -267,20 +288,143 @@ footer p {
 }
 
 
-body{
-    
+body {
+
     background-image: url(../..//images/dot-grid.webp);
-    
-    
+
+
+}
+
+
+@media (max-width:767px) {
+
+    .icon-Wire {
+        border-top: 20px;
+        height: 1px;
+        width: 32px;
+        position: absolute;
+        background-color: #BE917D;
+        margin-top: 50px;
+        margin-left: 20px;
+        // transition: all .5s;
+    }
+
+    .icon-top {
+        transform: translateY(-10px);
+
+    }
+
+    .icon-bottom {
+        transform: translateY(10px)
+    }
+
+    .container>.row>a {
+
+        background-color: #BE917D;
+    }
+
+    header {
+        // background-color: rgb(83, 83, 83);
+        background-image: url(../../images/a01.jpg);
+        // width: 375px;
+        height: 113px;
+        background-size: cover;
+        background-position: center;
+        position: relative; //父/   
+    }
+
+    header img {
+        width: 60px;
+        // height: 66px;
+        position: absolute; //兒
+        left: 50%;
+        top: 25px;
+        transform: translateX(-50%);
+    }
+// ====================================
+// 輪播區
+// ====================================
+.basemap {
+    // background-color: rgb(143, 44, 44);
+    height: 700px;
+}
+
+.basemap h2 {
+    padding-top:40px;  
+}
+
+.basemap .row {
+    justify-content: center;
+    margin: auto;
+
+}
+
+.basemap .row>ul {
+    margin-top: -20px;
+    margin-left: 70px;
+    margin-bottom: 70px;  
+}
+
+.basemap h5>a {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px 20px 10px 20px;
+    color: black;    
+}
+
+.basemap h5 {
+    // background-color: #BE917D;
+    margin-top: 20px;
+    // text-align: center;
+}
+
+.img-overlay {
+    display: flex;
+    overflow: auto; //隱//
+    // background-color: aqua;
+    height: 270px;
+}
+.img-overlay>a>img{
+    width: 375px;
+
+}
+
+// ====================================
+// 包套區
+// ====================================
+.container{
+    max-width:375px;
+}
+
+.container .col-12{
+    margin-top: 50px;
+    margin-bottom: 40px;  
+}
+.container .col-12>a>img{
+    width: 315.33px;
+
+}
+.container .col-md-6>hr {
+    margin-left: 22%;
+}
+// ====================================
+// 頁尾區
+// ====================================
+
+footer div {
+    margin-left: 12%;
 }
 
 
 
+}//767end//
 
 
 
+// // 超過768px以上執行 start 
+// @media (min-width:768px) {
+//     .icon-menu {
+//         display: none;
+//     }
+// }
 
-
-
-
-
+// min-width 768 end 

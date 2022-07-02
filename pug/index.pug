@@ -11,13 +11,17 @@ html(lang="en")
         // header start //
         header
              .container
-                .row 
+                .row
+                    .icon-menu
+                        .icon-Wire.icon-top
+                        .icon-Wire
+                        .icon-Wire.icon-bottom
                     a(href="index.html") 
                         img(src="public/images/logo.svg", alt="")
                     nav 
                         ul 
                             li 
-                                a(href="about.html") 關於MONI 
+                                a(href="about.html") 關於MONI
                             li
                                 a(href="#") 最新消息
                             li  
@@ -30,7 +34,12 @@ html(lang="en")
                                 a(href="#") Q&A
         // header end //
       
-        img.img-fluid(src="public/images/banner_01.jpg", alt="")
+        //- img.img-fluid(src="public/images/banner_01.jpg", alt="")
+
+        picture
+            source(media='(min-width:376px)', srcset="public/images/banner_01.jpg")
+            img(src='public/images/banner_手機.jpg', alt="" style='width:auto;')
+
 
         .basemap
             h2 攝影作品
@@ -57,9 +66,9 @@ html(lang="en")
         // content start
         
         .container.max-width
-            h2.text-center 包套專案
+            h2 包套專案
             .row
-                .col-6 
+                .col-12.col-md-6  
                     a(href="")
                         img(src="public/images/包套_01.jpg", alt="")
                     h4 國內婚紗攝影包套
@@ -69,7 +78,7 @@ html(lang="en")
                         small NTD
                         span 36800 
                         small up    
-                .col-6 
+                .col-12.col-md-6   
                     a(href="")
                         img(src="public/images/包套_02.jpg", alt="")
                     h4 海外婚紗攝影包套
@@ -79,7 +88,7 @@ html(lang="en")
                         small NTD
                         span 88,800
                         small up    
-                .col-6 
+                .col-12.col-md-6  
                     a(href="")
                         img(src="public/images/包套_03.jpg", alt="")
                     h4 婚禮攝影 / 新娘秘書
@@ -89,7 +98,7 @@ html(lang="en")
                         small NTD
                         span 13,600 
                         small up    
-                .col-6 
+                .col-12.col-md-6  
                     a(href="")
                         img(src="public/images/包套_04.jpg", alt="")
                     h4 專業攝影
