@@ -12,19 +12,21 @@ html(lang="en")
         // header start //
         header
              .container
-                .row 
+                label#btn-nav-switch(for="" class="menu_btn")
+                     span 
+                .row
                     a(href="index.html") 
                         img(src="public/images/logo.svg", alt="")
                     nav 
                         ul 
                             li 
-                                a(href="about.html") 關於MONI 
+                                a(href="about.html") 關於MONI
                             li
                                 a(href="#") 最新消息
                             li  
                                 a(href="Photography.html") 攝影作品
                             li  
-                                a(href="dress area.html#") 禮服品牌
+                                a(href="dress area.html") 禮服品牌
                             li  
                                 a(href="#") 聯絡店家
                             li  
@@ -84,3 +86,5 @@ html(lang="en")
             h4(href="")  台灣台中市南區學府路二段113號
             p  © 2022 MONI WEDDING, LLC. All Rights Reserved.
     //footer end
+    script(src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous')
+    script(src="public/js/index-script.js")

@@ -323,7 +323,7 @@ header > .container nav > ul > li:nth-child(3) {
 .img-overlay {
   display: flex;
   overflow: auto;
-  height: 570px;
+  width: 100%;
 }
 
 .basemap h5 {
@@ -340,11 +340,11 @@ header > .container nav > ul > li:nth-child(3) {
 .container h2 {
   letter-spacing: 1.5px;
   margin-top: 90px;
+  margin-bottom: 60px;
   text-align: center;
 }
 
 .container .col-md-6 {
-  margin-top: 90px;
   text-align: center;
   margin-bottom: 100px;
 }
@@ -428,24 +428,6 @@ body {
 }
 
 @media (max-width: 767px) {
-  .icon-Wire {
-    border-top: 20px;
-    height: 1px;
-    width: 32px;
-    position: absolute;
-    background-color: #BE917D;
-    margin-top: 50px;
-    margin-left: 20px;
-  }
-
-  .icon-top {
-    transform: translateY(-10px);
-  }
-
-  .icon-bottom {
-    transform: translateY(10px);
-  }
-
   .container > .row > a {
     background-color: #BE917D;
   }
@@ -464,6 +446,76 @@ body {
     left: 50%;
     top: 25px;
     transform: translateX(-50%);
+  }
+
+  header label {
+    position: relative;
+  }
+
+  .menu_btn {
+    width: 40px;
+    height: 40px;
+    display: block;
+    top: 35px;
+    left: 30px;
+  }
+
+  .menu_btn span {
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    display: block;
+    overflow: hidden;
+  }
+
+  .menu_btn::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: 6px;
+    width: 32px;
+    background: #BE917D;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 0px 12px 0px #BE917D, 0px -12px 0px #BE917D;
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  header nav {
+    background-image: url(../../images/a01.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    left: 0px;
+    position: absolute;
+    margin-top: 73px;
+    display: none;
+  }
+
+  header > .container nav > ul {
+    margin: auto;
+    flex-direction: column;
+  }
+
+  header > .container nav > ul > li {
+    border-bottom: 1px solid #BE917D;
+    margin-right: 0px;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  header > .container nav > ul > li > a {
+    color: rgb(244, 236, 224);
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+
+  header > .container nav > ul > li:nth-child(3) {
+    margin-right: 0px;
   }
 
   .basemap {

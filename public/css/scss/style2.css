@@ -27,11 +27,8 @@ a {
 }
 
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   /*換行*/
 }
 
@@ -267,17 +264,15 @@ header img {
   position: absolute;
   left: 50%;
   top: 50px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 header nav {
   margin: auto;
+  z-index: 1;
 }
 
 header > .container nav > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: 20px;
 }
@@ -296,6 +291,96 @@ header > .container nav > ul > li > a {
 
 header > .container nav > ul > li:nth-child(3) {
   margin-right: 220px;
+}
+
+.img-slide {
+  display: flex;
+  justify-content: center;
+  align-items: contain;
+}
+
+ul.slides {
+  background-color: #BE917D;
+  position: relative;
+  width: 100%;
+  height: 791px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li.slide {
+  color: aliceblue;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  transition: 0.5s transform ease-in-out;
+}
+
+li.slide:nth-of-type(1) {
+  background-image: url(../../images/banner_01.jpg);
+  background-position: center;
+}
+
+li.slide:nth-of-type(2) {
+  background-image: url(../../images/banner_02.jpg);
+  background-position: center;
+  left: 100%;
+}
+
+li.slide:nth-of-type(3) {
+  background-image: url(../../images/banner_03.jpg);
+  background-position: center;
+  left: 200%;
+}
+
+input[type=radio] {
+  position: relative;
+  z-index: 100;
+  display: none;
+}
+
+.controls-visible {
+  position: absolute;
+  width: 100%;
+  bottom: 12PX;
+  text-align: center;
+}
+
+.controls-visible label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  margin: 0 3px;
+}
+
+.slides input[type=radio]:nth-of-type(1):checked ~ .controls-visible label:nth-of-type(1) {
+  background-color: #BE917D;
+}
+
+.slides input[type=radio]:nth-of-type(2):checked ~ .controls-visible label:nth-of-type(2) {
+  background-color: #BE917D;
+}
+
+.slides input[type=radio]:nth-of-type(3):checked ~ .controls-visible label:nth-of-type(3) {
+  background-color: #BE917D;
+}
+
+.slides input[type=radio]:nth-of-type(1):checked ~ .slide {
+  transform: translateX(0%);
+}
+
+.slides input[type=radio]:nth-of-type(2):checked ~ .slide {
+  transform: translateX(-100%);
+}
+
+.slides input[type=radio]:nth-of-type(3):checked ~ .slide {
+  transform: translateX(-200%);
 }
 
 .basemap {
@@ -327,8 +412,6 @@ header > .container nav > ul > li:nth-child(3) {
 }
 
 .img-overlay {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   overflow: auto;
   width: 100%;
@@ -348,11 +431,11 @@ header > .container nav > ul > li:nth-child(3) {
 .container h2 {
   letter-spacing: 1.5px;
   margin-top: 90px;
-  margin-bottom: 60px;
   text-align: center;
 }
 
 .container .col-md-6 {
+  margin-top: 90px;
   text-align: center;
   margin-bottom: 100px;
 }
@@ -399,8 +482,7 @@ footer .container > a > img {
   height: 66px;
   margin-top: 60px;
   margin-left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer div {
@@ -454,8 +536,7 @@ body {
     position: absolute;
     left: 50%;
     top: 25px;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 
   header label {
@@ -488,8 +569,7 @@ body {
     top: 0;
     bottom: 0;
     margin: auto;
-    -webkit-box-shadow: 0px 12px 0px #BE917D, 0px -12px 0px #BE917D;
-            box-shadow: 0px 12px 0px #BE917D, 0px -12px 0px #BE917D;
+    box-shadow: 0px 12px 0px #BE917D, 0px -12px 0px #BE917D;
   }
 
   nav.active {
@@ -509,10 +589,7 @@ body {
 
   header > .container nav > ul {
     margin: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 
   header > .container nav > ul > li {
@@ -541,9 +618,7 @@ body {
   }
 
   .basemap .row {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin: auto;
   }
 
@@ -564,8 +639,6 @@ body {
   }
 
   .img-overlay {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     overflow: auto;
     height: 270px;
@@ -595,4 +668,4 @@ body {
   footer div {
     margin-left: 12%;
   }
-}
+}/*# sourceMappingURL=style2.css.map */

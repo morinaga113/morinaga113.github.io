@@ -9,16 +9,18 @@ html(lang="en")
         link(rel="stylesheet", href="public/css/scss/style.css")
         link(rel="stylesheet", href="public/css/scss/Photography.css")
     body
-    // header start //
-    header
-             .container
-                .row 
+        // header start //
+        header
+            .container
+                label#btn-nav-switch(for="" class="menu_btn")
+                        span 
+                .row
                     a(href="index.html") 
-                        img(src="public/images/logo.svg", alt="index.html")
+                        img(src="public/images/logo.svg", alt="")
                     nav 
                         ul 
                             li 
-                                a(href="about.html") 關於MONI 
+                                a(href="about.html") 關於MONI
                             li
                                 a(href="#") 最新消息
                             li  
@@ -29,45 +31,45 @@ html(lang="en")
                                 a(href="#") 聯絡店家
                             li  
                                 a(href="#") Q&A
-    // header end //
-    .container
-        .row.margin-top
-            .col-4
-                a(href="")
-                    img(src="public/images/作品集_01.jpg", alt="") 
-            .col-4
-                a(href="")
-                    img(src="public/images/作品集_02.jpg", alt="") 
-            .col-4
-                a(href="")
-                    img(src="public/images/作品集_03.jpg", alt="") 
-            .col-4
-                a(href="")
-                    img(src="public/images/作品集_04.jpg", alt="") 
-            .col-4
-                a(href="")
-                    img(src="public/images/作品集_05.jpg", alt="") 
-            .col-4
-                a(href="")
-                    img(src="public/images/作品集_06.jpg", alt="") 
-            .col-4
-                a(href="")
-                    img(src="public/images/作品集_07.jpg", alt="") 
-            .col-4
-                a(href="")
-                    img(src="public/images/作品集_08.jpg", alt="") 
-            .col-4
-                a(href="")
-                    img(src="public/images/作品集_09.jpg", alt="")
-            .col-4
-                a(href="")
-                    img(src="public/images/作品集_10.jpg", alt="") 
-            .col-4
-                a(href="")
-                    img(src="public/images/作品集_11.jpg", alt="") 
-            .col-4
-                a(href="")
-                    img(src="public/images/作品集_12.jpg", alt="")  
+        // header end //
+        .container
+            .row.margin-top
+                .col-4
+                    a(href="")
+                        img(src="public/images/作品集_01.jpg", alt="") 
+                .col-4
+                    a(href="")
+                        img(src="public/images/作品集_02.jpg", alt="") 
+                .col-4
+                    a(href="")
+                        img(src="public/images/作品集_03.jpg", alt="") 
+                .col-4
+                    a(href="")
+                        img(src="public/images/作品集_04.jpg", alt="") 
+                .col-4
+                    a(href="")
+                        img(src="public/images/作品集_05.jpg", alt="") 
+                .col-4
+                    a(href="")
+                        img(src="public/images/作品集_06.jpg", alt="") 
+                .col-4
+                    a(href="")
+                        img(src="public/images/作品集_07.jpg", alt="") 
+                .col-4
+                    a(href="")
+                        img(src="public/images/作品集_08.jpg", alt="") 
+                .col-4
+                    a(href="")
+                        img(src="public/images/作品集_09.jpg", alt="")
+                .col-4
+                    a(href="")
+                        img(src="public/images/作品集_10.jpg", alt="") 
+                .col-4
+                    a(href="")
+                        img(src="public/images/作品集_11.jpg", alt="") 
+                .col-4
+                    a(href="")
+                        img(src="public/images/作品集_12.jpg", alt="")  
 
 
     //footer start
@@ -90,3 +92,5 @@ html(lang="en")
             h4(href="")  台灣台中市南區學府路二段113號
             p  © 2022 MONI WEDDING, LLC. All Rights Reserved.
     //footer end
+    script(src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous')
+    script(src="public/js/index-script.js")

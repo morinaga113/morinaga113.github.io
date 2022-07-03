@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MONI茉尼婚紗</title>
     <link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="public/css/scss/style.css">
+    <link rel="stylesheet" href="public/css/scss/style2.css">
   </head>
   <body> 
     <!-- header start //-->
@@ -28,9 +28,21 @@
       </div>
     </header>
     <!-- header end //-->
-    <picture>
-      <source media="(min-width:400px)" srcset="public/images/banner_01.jpg"><img src="public/images/banner_手機.jpg" alt="" style="width:100%;">
-    </picture>
+    <div class="img-slide">
+      <ul class="slides"> 
+        <input type="radio" id="control-1" name="control" charset>
+        <input type="radio" id="control-2" name="control">
+        <input type="radio" id="control-3" name="control">
+        <li class="slide"> </li>
+        <li class="slide"> </li>
+        <li class="slide"> </li>
+        <div class="controls-visible"> 
+          <label for="control-1"> </label>
+          <label for="control-2"> </label>
+          <label for="control-3"> </label>
+        </div>
+      </ul>
+    </div>
     <div class="basemap">
       <h2>攝影作品</h2>
       <div class="row"> 

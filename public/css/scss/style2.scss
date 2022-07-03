@@ -101,6 +101,7 @@ header img {
 
 header nav {
     margin: auto;
+    z-index: 1;
 
 }
 
@@ -129,8 +130,103 @@ header>.container nav>ul>li:nth-child(3) {
 
     margin-right: 220px;
 }
-
 // ====================================
+// 大圖輪播區
+// ====================================
+.img-slide{
+    display: flex;
+    justify-content: center;
+    align-items: contain;
+    // min-width:400px;
+    // min-height: 100vh;
+    // background-color: blueviolet;
+} 
+ul.slides{
+    background-color: #BE917D;
+    position: relative; 
+    width:100%;
+    height: 791px;
+    margin: 0; 
+    padding: 0;
+    overflow: hidden;  
+}
+li.slide { 
+    color: aliceblue;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    transition: .5s transform ease-in-out;
+     
+}
+li.slide:nth-of-type(1){
+    background-image: url(../../images/banner_01.jpg);
+    background-position: center;
+    // background-color: rgb(135, 179, 179);
+}
+li.slide:nth-of-type(2){
+    background-image: url(../../images/banner_02.jpg);
+    background-position: center;
+
+    // background-color: #db612d;
+    left: 100%;
+}
+li.slide:nth-of-type(3){
+    background-image: url(../../images/banner_03.jpg);
+    background-position: center;
+
+    // background-color: #91d651;
+    left: 200%;    
+}
+input[type="radio"]{
+    position: relative;
+    z-index: 100;
+    display: none;
+}
+
+.controls-visible {
+    position: absolute;
+    width: 100%;
+    bottom: 12PX;
+    text-align: center;
+}
+
+.controls-visible label{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: 0 3px;
+   
+}
+
+.slides input[type='radio']:nth-of-type(1):checked ~
+.controls-visible label:nth-of-type(1){
+    background-color: #BE917D;
+}
+.slides input[type='radio']:nth-of-type(2):checked ~
+.controls-visible label:nth-of-type(2){
+    background-color: #BE917D;
+}
+.slides input[type='radio']:nth-of-type(3):checked ~
+.controls-visible label:nth-of-type(3){
+    background-color: #BE917D;
+}
+.slides input[type='radio']:nth-of-type(1):checked ~ .slide{
+     transform: translateX(0%);
+}
+.slides input[type='radio']:nth-of-type(2):checked ~ .slide{
+    transform: translateX(-100%);
+}
+.slides input[type='radio']:nth-of-type(3):checked ~ .slide{
+    transform: translateX(-200%);
+}
+
+
+// ==================================== 
 // 輪播區
 // ====================================
 .basemap {
@@ -191,13 +287,12 @@ header>.container nav>ul>li:nth-child(3) {
 .container h2 {
     letter-spacing: 1.5px;
     margin-top: 90px;
-    margin-bottom: 60px;
     text-align: center;
 }
 
 .container .col-md-6 {
     // background-color: rgb(150, 231, 191);
-    // margin-top: 30px;
+    margin-top: 90px;
     text-align: center;
     margin-bottom: 100px;
     // max-width: 500px;
