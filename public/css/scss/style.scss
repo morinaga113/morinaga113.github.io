@@ -22,7 +22,6 @@ a {
 }
 
 
-
 .img-fluid {
     width: 100%;
 }
@@ -187,8 +186,8 @@ header>.container nav>ul>li:nth-child(3) {
 // 包套區
 // ====================================
 .container .row{
-    max-width: 1100px;
-    margin: auto;
+    // max-width: 1100px;
+    // margin: auto;
 
 }
 
@@ -418,9 +417,6 @@ body {
     padding-top: 70px;   
 }
 
-.basemap .row {
-    // justify-content: center;
-}
 
 .basemap .row>ul {
     display:block;

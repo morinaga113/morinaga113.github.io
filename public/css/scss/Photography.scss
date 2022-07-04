@@ -4,9 +4,23 @@
 .margin-top{
     margin-top: 80px;
     margin-bottom: 50px;
+    
 }
 
 body{
-    background-image: none;
+    // background-image: none;
 }
 
+.col-12.col-md-6.col-lg-4>a>img{
+    width: 100%;
+    
+}
+
+@media (max-width:767px){
+    .margin-top{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding-top: -20px;
+    }
+
+}

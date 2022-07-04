@@ -335,11 +335,6 @@ header > .container nav > ul > li:nth-child(3) {
   color: black;
 }
 
-.container .row {
-  max-width: 1100px;
-  margin: auto;
-}
-
 .container h2 {
   letter-spacing: 1.5px;
   margin-top: 90px;
