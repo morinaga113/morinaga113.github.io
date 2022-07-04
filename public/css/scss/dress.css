@@ -1,11 +1,16 @@
 .dress .row {
-  margin: 50px 30px 50px 30px;
+  margin: 40px 30px 0px 30px;
   justify-content: space-around;
+}
+
+.dress .col-12.col-md-4.col-lg-2 > a > img {
+  background-color: aqua;
+  width: 100%;
 }
 
 .dress .row > div > a > p {
   line-height: 20px;
-  margin-top: 40px;
+  margin-top: 30px;
   text-align: center;
 }
 

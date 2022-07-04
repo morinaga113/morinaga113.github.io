@@ -5,17 +5,30 @@ body {
 
 .layout {
   max-width: 96%;
-  height: 80%;
   margin: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   display: grid;
-  grid-template-columns: 15% 15% 20% 15% 20%;
-  grid-template-rows: 5% 20% 20%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(14, 6em);
   gap: 15px;
-  grid-template-areas: "a b d f f f f " "a b d f f f f " "a b e f f f f " "a b e g h h h " "c c e g h h h " "c c e g h h h ";
+  grid-template-areas: "a b " "a b " "a b " "c c " "c c " "d d " "d d " "e g " "e g " "e g " "h h " "h h " "f f " "f f ";
 }
 
+@media (min-width: 768px) {
+  .layout {
+    max-width: 96%;
+    height: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 15% 15% 20% 15% 20%;
+    grid-template-rows: 5% 20% 20%;
+    gap: 15px;
+    grid-template-areas: "a b d f f f f " "a b d f f f f " "a b e f f f f " "a b e g h h h " "c c e g h h h " "c c e g h h h ";
+  }
+}
 .box1 {
   background-color: red;
   grid-area: a;
