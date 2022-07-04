@@ -14,7 +14,6 @@ body {
   grid-template-rows: 5% 20% 20%;
   gap: 15px;
   grid-template-areas: "a b d f f f f " "a b d f f f f " "a b e f f f f " "a b e g h h h " "c c e g h h h " "c c e g h h h ";
-  grid-template-areas: "";
 }
 
 .box1 {
