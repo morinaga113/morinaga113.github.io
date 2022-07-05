@@ -1,16 +1,37 @@
-.left {
-  background-color: rgb(251, 127, 255);
-  width: 50%;
-  margin: 20px 0px 20px 20px;
+.container {
+  max-width: 1000px;
 }
 
-.right {
-  background-color: rgb(157, 197, 197);
-  width: 50%;
-  margin: 20px 20px 20px 0px;
+.container h2 {
+  margin-top: 70px;
+  margin-bottom: 40px;
 }
 
 .row {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+}
+.row .row > .left > img {
+  max-width: 100%;
+}
+
+.left {
+  margin: 20px 0px 20px 20px;
+}
+
+.left img {
+  width: 100%;
+}
+
+.right {
+  background-color: rgb(157, 197, 197);
+  width: 50%;
+  margin: 20px 20px 20px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right img {
+  width: 100%;
 }
