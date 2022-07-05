@@ -1,0 +1,25 @@
+.left{
+    background-color: rgb(251, 127, 255);
+    // height: auto;
+    width: 50%;
+    margin: 20px 0px 20px 20px;
+}
+.row>.left>img{
+    max-width:100%;
+    height:auto;
+    
+}
+.right {
+    background-color: rgb(157, 197, 197);
+    // height: auto;
+    width: 50%;
+    margin: 20px 20px 20px 0px;
+}
+.container{
+    max-width: 900px;
+}
+.row{
+    
+    flex-wrap: nowrap;
+
+}

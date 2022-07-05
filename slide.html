@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide</title>
+    <style>
+        .parent{
+            width: 500px;
+            /* height: 400px; */
+            margin: auto;
+            overflow: hidden;
+            /* 相對定位 */
+            position: relative;
+        }
+        .child{
+            /* 圖片寬度*項目個數 */
+            width: 2000px;
+            /* 去除行內空白，文字大小0 */
+            font-size: 0;
+            /* 絕對定位 */
+            /* position: absolute; */
+            /* top:0; */
+            /* left:0; */
+        }
+        .parent img{
+            /* 同.parent寬 */
+            width: 500px;
+        }
+        .left-arrow, .right-arrow{
+            position: absolute;
+            cursor: pointer;
+            /* background-color: rgb(174, 218, 203); */
+            width: 40px;
+            height: 100%;
+            top: 0px;
+            /* 設定較小塊的感應區 */
+            /* height: 40px; */
+            /* top:50% */
+            /* transform: translateY(-50%); */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+        }
+        .left-arrow{
+            left: 0px;
+        }   
+        .right-arrow{
+            right: 0px;
+        }  
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <img src="public/images/作品集_01.jpg" alt="">
+            <img src="public/images/作品集_02.jpg" alt="">
+            <img src="public/images/作品集_03.jpg" alt="">
+            <img src="public/images/作品集_04.jpg" alt="">
+        </div>
+        <div class="left-arrow"><</div>
+        <div class="right-arrow">></div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"> </script>
+    <script>
+        let currentLeftNum = 0
+        $('.right-arrow').on('click',function(){
+            if( currentLeftNum == -1500 ){
+                
+            }else{
+                // 每點一次箭頭會扣500
+                currentLeftNum = currentLeftNum - 500
+                // console.log(currentLeftNum)
+                // 第二層 動畫 left位移一張圖片寬
+                $('.child').animate({'margin-left': currentLeftNum})
+            }
+        })// .right-arrow end
+
+        $('.left-arrow').on('click',function(){
+            if(currentLeftNum == 0 ){
+                //假如 currentLeftNum == 0 , 執行這段
+            }else{
+                //假如 currentLeftNum != 0 , 執行這段
+                // 每點一次箭頭會扣500
+                currentLeftNum = currentLeftNum + 500
+                // console.log(currentLeftNum)
+                // 第二層 動畫 left位移一張圖片寬
+                $('.child').animate({'margin-left': currentLeftNum})
+
+            }// if currentLeftNum end
+        })// .right-arrow end
+
+    </script>
+    
+</body>
+</html>

@@ -16,3 +16,5 @@ function openNav(){
     }// openNav if end
     
 } //openNav end
+
+new WOW().init();

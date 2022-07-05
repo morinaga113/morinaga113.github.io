@@ -6,6 +6,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title MONI茉尼婚紗
         link(rel="shortcut icon", href="public/images/favicon.ico", type="image/x-icon")
+        link(rel="stylesheet", href="public/js/WOW-master/css/libs/animate.css")
         link(rel="stylesheet", href="public/css/scss/style.css")
     body 
         // header start //
@@ -21,7 +22,7 @@ html(lang="en")
                             li 
                                 a(href="about.html") 關於MONI
                             li
-                                a(href="#") 最新消息
+                                a(href="news.html") 最新消息
                             li  
                                 a(href="Photography.html") 攝影作品
                             li  
@@ -38,10 +39,9 @@ html(lang="en")
             source(media='(min-width:400px)', srcset="public/images/banner_01.jpg")
             img(src='public/images/banner_手機.jpg', alt="" style='width:100%;')
 
-
-        .basemap
+        .basemap.wow.fadeInDownBig
             h2 攝影作品
-            .row 
+            .row
                 ul 
                     li 
                         a(href="") 婚 紗 攝 影
@@ -129,7 +129,9 @@ html(lang="en")
             p  © 2022 MONI WEDDING, LLC. All Rights Reserved.
         //footer end
         script(src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous')
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js")
         script(src="public/js/index-script.js")
+        script(src="public/js/WOW-master/dist/wow.min.js")
                     
 
         
