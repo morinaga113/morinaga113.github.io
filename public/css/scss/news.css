@@ -9,13 +9,16 @@
 
 .row {
   flex-wrap: nowrap;
+  align-items: center;
+  line-height: 30px;
 }
-.row .row > .left > img {
+
+.row > .left > img {
   max-width: 100%;
 }
 
 .left {
-  margin: 20px 0px 20px 20px;
+  margin-bottom: 40px;
 }
 
 .left img {
@@ -23,12 +26,10 @@
 }
 
 .right {
-  background-color: rgb(157, 197, 197);
   width: 50%;
-  margin: 20px 20px 20px 20px;
-  align-items: center;
+  margin-left: 60px;
 }
 
-.right img {
-  width: 100%;
+.right h5 {
+  margin-top: 20px;
 }/*# sourceMappingURL=news.css.map */

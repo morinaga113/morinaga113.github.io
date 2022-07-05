@@ -347,10 +347,6 @@ header > .container nav > ul > li:nth-child(3) {
   color: black;
 }
 
-.container .row {
-  margin: auto;
-}
-
 .container h2 {
   letter-spacing: 1.5px;
   margin-top: 90px;
@@ -398,6 +394,7 @@ footer {
   background-size: cover;
   background-position: center;
   height: 402px;
+  text-align: center;
 }
 
 footer .container > a > img {
@@ -410,18 +407,21 @@ footer .container > a > img {
 }
 
 footer div {
-  margin-left: 41%;
+  margin: 0;
   margin-top: 40px;
-  margin-bottom: 30px;
+  text-align: center;
 }
 
-footer a > img {
+footer div > a > img {
   width: 25px;
   margin-right: 33px;
 }
 
+footer > .container > div > a:last-child(5) {
+  background-color: #BE917D;
+}
+
 footer h4 {
-  text-align: center;
   color: rgb(244, 236, 224);
   line-height: 20px;
   margin-top: 10px;
@@ -432,7 +432,6 @@ footer h4 {
 }
 
 footer p {
-  text-align: center;
   color: rgb(173, 173, 173);
   font-size: 6px;
   margin-top: 50px;
