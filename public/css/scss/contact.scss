@@ -31,16 +31,23 @@ iframe {
     
 }
 
-.container {
-    max-width: 1000px;
+.contact-width {
+    max-width: 1200px;
+    // background-color: aqua;
+    margin: auto;
+    width: 100%;
 }
-.container p{
+.contact-width h2{
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+}
+.contact-width p{
     margin-bottom: 30px;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
-.container .col-6 {
+.contact-width .col-6 {
     margin-top: 30px;
     // background-color: aqua;
     text-align: end;
@@ -50,7 +57,7 @@ iframe {
 
 .input-width {
     width: 95%;
-    padding: 10px;
+    padding: 11px;
     margin-bottom: 13px;
     border: none;
     border: 1px solid gray;
