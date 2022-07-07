@@ -14,9 +14,7 @@ body{
 
 .col-12.col-md-6.col-lg-4>a>img{
     width: 100%;
-    
 }
-
 
 @media (max-width:767px){
     .margin-top{
@@ -27,6 +25,10 @@ body{
     .row {
         display:block; 
         flex-wrap: nowrap; 
+    }
+    .col-12{
+        width:100%;
+        
     }
 
 }

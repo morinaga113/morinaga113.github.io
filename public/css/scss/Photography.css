@@ -22,4 +22,8 @@ body {
     display: block;
     flex-wrap: nowrap;
   }
+
+  .col-12 {
+    width: 100%;
+  }
 }/*# sourceMappingURL=Photography.css.map */
