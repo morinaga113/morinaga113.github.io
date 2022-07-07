@@ -18,14 +18,45 @@ a {
   max-width: 1440px;
 }
 
+.bag {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .img-fluid {
   width: 100%;
+}
+
+.img-max {
+  max-width: 100%;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
   /*換行*/
+}
+
+.left-right {
+  position: relative;
+}
+
+.left-right::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  margin: 0;
+  height: 1px;
+  background-color: #BE917D;
+  right: 0;
+  transition: 0.7s;
+  bottom: -8px;
+}
+
+.left-right:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 .col-1 {
@@ -274,14 +305,19 @@ header > .container nav > ul {
 
 header > .container nav > ul > li {
   margin-right: 60px;
-  margin-top: 65px;
+  margin-top: 60px;
 }
 
 header > .container nav > ul > li > a {
-  line-height: 80px;
+  line-height: 90px;
   color: rgb(244, 236, 224);
   font-size: 16px;
   letter-spacing: 1px;
+}
+
+header > .container nav > ul > li > a:hover {
+  color: #cfa898;
+  line-height: 80px;
 }
 
 header > .container nav > ul > li:nth-child(3) {
@@ -389,32 +425,26 @@ footer .container > a > img {
   width: 72px;
   height: 66px;
   margin-top: 60px;
-  margin-left: 50%;
-  transform: translateX(-50%);
 }
 
 footer div {
-  margin: 0;
   margin-top: 40px;
-  text-align: center;
 }
 
-footer div > a > img {
+footer > .container > div > a > img {
   width: 25px;
-  margin-right: 33px;
+  margin-right: 34px;
 }
 
-footer > .container > div > a:last-child(5) {
-  background-color: #BE917D;
+footer > .container > div > a:nth-child(5) {
+  margin-right: -34px;
 }
 
 footer h4 {
   color: rgb(244, 236, 224);
   line-height: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
   letter-spacing: 1.5px;
-  font-weight: 500;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
 
@@ -451,6 +481,7 @@ body {
 
   header label {
     position: relative;
+    cursor: pointer;
   }
 
   .menu_btn {
@@ -482,10 +513,6 @@ body {
     box-shadow: 0px 12px 0px #BE917D, 0px -12px 0px #BE917D;
   }
 
-  nav.active {
-    display: block;
-  }
-
   header nav {
     background-color: #BE917D;
     background-size: cover;
@@ -495,6 +522,11 @@ body {
     position: absolute;
     margin-top: 73px;
     display: none;
+    transition: all 0.5s;
+  }
+
+  nav.active {
+    display: block;
   }
 
   header > .container nav > ul {
@@ -513,6 +545,11 @@ body {
     color: #F4ECE0;
     font-size: 16px;
     letter-spacing: 3px;
+  }
+
+  header > .container nav > ul > li > a:hover {
+    line-height: 90px;
+    color: #F4ECE0;
   }
 
   header > .container nav > ul > li:nth-child(3) {

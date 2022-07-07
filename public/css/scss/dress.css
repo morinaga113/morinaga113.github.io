@@ -4,6 +4,12 @@
 
 .col-6.col-md-3.col-lg-2 > a > img {
   width: 100%;
+  transition: all 0.2s;
+}
+
+.col-6.col-md-3.col-lg-2 > a > img:hover {
+  background-color: black;
+  transform: scale(1.18);
 }
 
 .dress .row > div > a > p {

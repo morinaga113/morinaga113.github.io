@@ -6,6 +6,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title 禮服品牌
         link(rel="shortcut icon", href="public/images/favicon.ico", type="image/x-icon")
+        link(rel="stylesheet", href="public/js/WOW-master/css/libs/animate.css")
         link(rel="stylesheet", href="public/css/scss/style.css")
         link(rel="stylesheet", href="public/css/scss/dress.css")
     body 
@@ -20,24 +21,24 @@ html(lang="en")
                     nav 
                         ul 
                             li 
-                                a(href="about.html") 關於MONI
+                                a(href="about.html").left-right 關於MONI
                             li
-                                a(href="news.html") 最新消息
+                                a(href="news.html").left-right 最新消息
                             li  
-                                a(href="Photography.html") 攝影作品
+                                a(href="Photography.html").left-right 攝影作品
                             li  
-                                a(href="dress area.html") 禮服品牌
+                                a(href="dress area.html").left-right 禮服品牌
                             li  
-                                a(href="#") 聯絡店家
+                                a(href="contact us.html").left-right 聯絡店家
                             li  
-                                a(href="#") Q&A
+                                a(href="#").left-right Q&A
         // header end //
 
         .dress
             .row
                 .col-6.col-md-3.col-lg-2
                     a(href="")
-                        img(src="public/images/dress_01.jpg", alt="")  
+                        img(src="public/images/dress_01.jpg", alt="") 
                         p 
                             img(src="public/images/logo_01.png", alt="") 
                 .col-6.col-md-3.col-lg-2
@@ -87,4 +88,6 @@ html(lang="en")
             p  © 2022 MONI WEDDING, LLC. All Rights Reserved.
     //footer end
     script(src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous')
+    script(src="public/js/WOW-master/dist/wow.min.js")
     script(src="public/js/index-script.js")
+

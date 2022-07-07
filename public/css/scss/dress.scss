@@ -9,10 +9,21 @@
 }
 
 .col-6.col-md-3.col-lg-2>a>img{
+    // filter:grayscale(95%) ;
+    // opacity: 0.8;
     // background-color: aqua;
     width: 100%;
-  
+    transition: all .2s;
+    
 }
+.col-6.col-md-3.col-lg-2>a>img:hover{
+    // filter:grayscale(0%) ;
+    // opacity: 1;
+    background-color: black;
+    transform: scale(1.18);
+    
+}
+
 .dress .row>div>a>p{
     // background-color: aqua;
     line-height: 20px;

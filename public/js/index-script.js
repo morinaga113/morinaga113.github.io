@@ -1,4 +1,3 @@
-    new WOW().init();
 
    // 小於768執行
     $('#btn-nav-switch').on('click', function(){
@@ -10,5 +9,4 @@
     })// nav>ul>li end
 
 
-
-    gsap.to(".box", {rotation: 27, x: 100, duration: 1});
+    new WOW().init();
