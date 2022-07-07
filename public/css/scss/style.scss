@@ -121,7 +121,7 @@ header {
 }
 
 header img {
-    width: 72px;
+    width: 80px;
     // height: 66px;
     position: absolute; //兒
     left: 50%;
@@ -143,7 +143,7 @@ header>.container nav>ul {
 }
 
 header>.container nav>ul>li {
-    margin-right: 60px;
+    margin-right: 80px;
     margin-top: 60px;
 
 }
@@ -151,9 +151,8 @@ header>.container nav>ul>li {
 header>.container nav>ul>li>a {
     line-height: 90px;
     color: rgb(244, 236, 224);
-    font-size: 16px;
+    font-size: 19px;
     letter-spacing: 1px;
-
 }
 
 header>.container nav>ul>li>a:hover {
@@ -179,6 +178,7 @@ header>.container nav>ul>li:nth-child(3) {
     text-align: center;
     letter-spacing: 1.5px;
     margin-bottom: 50px;
+    font-size: 30px;
     // background-color: aqua;
 }
 
@@ -194,9 +194,9 @@ header>.container nav>ul>li:nth-child(3) {
 }
 
 .basemap .row>ul>li>a {
-    margin: 0 40px;
+    margin: 0 70px;
     padding-bottom: 15px;
-    font-size: 15px;
+    font-size: 19px;
     color: rgb(0, 0, 0);
     border-bottom: 1px solid rgb(0, 0, 0);
 }
@@ -216,8 +216,9 @@ header>.container nav>ul>li:nth-child(3) {
 
 .basemap h5>a {
     border: 1px solid rgb(0, 0, 0);
-    padding: 10px 20px 10px 20px;
+    padding: 10px 30px 10px 30px;
     color: black;
+    font-size: 17px;
     // background-color: aqua;
 }
 
@@ -231,6 +232,7 @@ header>.container nav>ul>li:nth-child(3) {
     margin-top: 90px;
     margin-bottom: 60px;
     text-align: center;
+    font-size: 30px;
 }
 
 .container .col-md-6 {
@@ -242,11 +244,11 @@ header>.container nav>ul>li:nth-child(3) {
 .container .col-md-6>h4 {
     margin-top: 47px;
     margin-bottom: 10px;
-    font-size: 22px;
+    font-size: 28px;
 }
 
 .container .col-md-6>h5 {
-    font-size: 15px;
+    font-size: 18px;
     margin-bottom: 25px;
 }
 
@@ -258,10 +260,11 @@ header>.container nav>ul>li:nth-child(3) {
 }
 
 .container .col-md-6>p>span {
-    font-size: 32px;
+    font-size: 36px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 6px;
     margin-right: 2px;
+    letter-spacing: 2px;
     // background-color: aqua;
 }
 
