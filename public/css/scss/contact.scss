@@ -75,3 +75,26 @@ iframe {
     text-align: center;
 
 }
+
+@media (max-width:767px) {
+    .contact-width .row{
+        display: block;
+    }
+    .contact-width .col-12{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .contact-width p{
+        margin-bottom: 40px;
+        text-align: center;
+        width: 55%;
+        margin-left: 23%;
+        letter-spacing: 1px;
+        line-height:30px
+    }
+    .contact-width h2{
+        text-align: center;
+        margin: 50px 0px 30px 0px;
+    }
+    
+}
