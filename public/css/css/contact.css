@@ -25,9 +25,10 @@ iframe {
 }
 
 .contact-width {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
   width: 100%;
+  text-align: end;
 }
 
 .contact-width h2 {

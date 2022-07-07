@@ -287,7 +287,7 @@ footer {
 }
 
 footer .container>a>img {
-    width: 72px;
+    width: 80px;
     height: 66px;
     margin-top: 60px;
 }
@@ -299,8 +299,9 @@ footer div {
 
 footer>.container>div>a>img {
     // background-color: rgb(255, 34, 34);
-    width: 25px;
-    margin-right: 34px;
+    width: 28px;
+    margin-right: 40px;
+    margin-bottom: 10px;
 
 }
 
@@ -313,9 +314,11 @@ footer h4 {
     // background-color: #BE917D;
     color: rgb(244, 236, 224);
     line-height: 20px;
-    margin-top: 20px;
+    margin-top: 16px;
     letter-spacing: 1.5px;
-    font-size: 15px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
 }
 
 footer p {
