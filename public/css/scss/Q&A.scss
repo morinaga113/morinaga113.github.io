@@ -6,7 +6,7 @@
             border-radius: 4px;
             margin-bottom: 20px;
             line-height: 20px;
-            padding: 20px 8px 20px 40px; 
+            padding: 20px 8px 10px 40px; 
             cursor: pointer;
             // background-color: aqua;
             font-size: 18px;
@@ -25,11 +25,17 @@
 
         .answer{
             display: none;
+            line-height: 25px;
+            color: #333;
+            margin-right: 50px;
+            font-size: 17px;
         }
      
         .question{
             position: relative;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
+            color: #BE917D;
+            
         }
         .icon-arrow{
             transition: transform .3s;
