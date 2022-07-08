@@ -65,6 +65,8 @@ iframe {
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
+  color: #BE917D;
+  background-color: antiquewhite;
 }
 
 @media (max-width: 767px) {

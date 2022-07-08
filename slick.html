@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- slick css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <!-- slick theme css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+
+    <style>
+        body {
+            background-color: rgb(255, 137, 156);
+        }
+
+        .banner{
+            width: 100%;
+            max-width:1000px;
+            margin: auto;
+            
+        }
+        .banner img{
+            margin: 0px;
+           
+        }
+    </style>
+
+<body>
+
+    <div class="banner">
+        <img src="public/images/作品集_01.jpg" alt="">
+        <img src="public/images/作品集_02.jpg" alt="">
+        <img src="public/images/作品集_03.jpg" alt="">
+        <img src="public/images/作品集_04.jpg" alt="">
+
+    </div>
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- slick js -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- 自定義 js -->
+    <script>
+        $('.banner').slick({
+            infinite: true,
+            slidesToShow: 2.36,
+            slidesToScroll: 3
+        });
+    </script>
+
+
+
+
+</body>
+
+
+</html>

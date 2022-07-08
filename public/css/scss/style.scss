@@ -164,13 +164,83 @@ header>.container nav>ul>li:nth-child(3) {
 
     margin-right: 220px;
 }
+// ====================================
+// 大圖輪播區
+// ====================================
+.parent{
+    /* 可視範圍寬 */
+    /* width: 500px; */
+    width:100%;
+    // max-width: 100%;
+    // margin: auto;
+    // overflow: hidden;
+    position: relative;
+    overflow: hidden;
+}
+.parent img {
+    /* 同.parent寬 */
+    width: 100%;
+}
 
+.child{
+    /* 圖片寬度*項目個數 */
+    /* width: 2000px; */
+    /* 去除行內空白，文字大小0 */
+    font-size: 0;
+}
+.left-arrow,
+.right-arrow {
+    position: absolute;
+    cursor: pointer;
+    // background-color: rgb(174, 218, 203);
+    width: 40px;
+    height: 100%;
+    top: 0px;
+    /* 設定較小塊的感應區 */
+    /* height: 40px; */
+    /* top:50% */
+    /* transform: translateY(-50%); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+.left-arrow {
+    left: 0px;
+}
+
+.right-arrow {
+    right: 0px;
+}
+.indicator {
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.indicator>li {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(175, 175, 175);
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.indicator>li:last-child {
+    margin-right:0px;
+}
+.indicator>li.active {
+        background-color: #BE917D;
+}
 // ====================================
 // 輪播區
 // ====================================
 .basemap {
     background-color: rgb(255, 255, 255);
-    height: 1020px;
+    height: 1100px;
 }
 
 .basemap h2 {
@@ -201,16 +271,14 @@ header>.container nav>ul>li:nth-child(3) {
     border-bottom: 1px solid rgb(0, 0, 0);
 }
 
-.img-overlay {
-    display: flex;
-    overflow: auto; //隱//
-    // background-color: aqua;
-    width: 100%;
+.slick-initialized .slick-slide{
+    margin-bottom: 70px;
 }
 
+
 .basemap h5 {
-    margin-top: 50px;
     text-align: center;
+    // padding-top:70px;
 
 }
 
@@ -219,6 +287,7 @@ header>.container nav>ul>li:nth-child(3) {
     padding: 10px 30px 10px 30px;
     color: black;
     font-size: 17px;
+    
     // background-color: aqua;
 }
 
@@ -413,14 +482,14 @@ body {
    
     /////////////////////////////////
      //底線樣式
-     .left-right {
-        // position: relative;
+    //  .left-right {
+    //     // position: relative;
 
-    }
+    // }
 
-    .left-right::after {
-        // display: none;
-    }
+    // .left-right::after {
+    //     // display: none;
+    // }
     header nav {
         background-color: #BE917D;
         // background-image: url(../../images/a01.jpg) ;
@@ -430,14 +499,15 @@ body {
         left: 0px;
         position: absolute;
         margin-top: 73px;
-        display: none;
-        // top:-100vw;
+        height: 0px;
         transition: all .5s;
+        overflow: hidden;
+        z-index: 20;
+        
     }
     
     nav.active {
-        display: block;
-        // top:0px
+        height: 546px;
     }
     header>.container nav>ul {
         margin: auto;

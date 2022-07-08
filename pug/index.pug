@@ -6,7 +6,9 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title MONI茉尼婚紗
         link(rel="shortcut icon", href="public/images/favicon.ico", type="image/x-icon")
-        link(rel="stylesheet", href="public/js/WOW-master/css/libs/animate.css")
+        //- link(rel="stylesheet", href="public/js/WOW-master/css/libs/animate.css")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
         link(rel="stylesheet", href="public/css/scss/style.css")
     body 
         // header start //
@@ -32,12 +34,18 @@ html(lang="en")
                             li  
                                 a(href="#").left-right  Q&A
         // header end //
-      
+        //大圖輪播區//
         //- img.img-fluid(src="public/images/banner_01.jpg", alt="")
-
-        picture
-            source(media='(min-width:400px)', srcset="public/images/banner_01.jpg")
-            img(src='public/images/banner_手機.jpg', alt="" style='width:100%;')
+        .parent
+            .child 
+                img(src="public/images/banner_01.jpg", alt="") 
+                img(src="public/images/banner_02.jpg", alt="") 
+                img(src="public/images/banner_03.jpg", alt="")
+            .left-arrow < 
+            .right-arrow >
+            ol.indicator
+                li.active 
+        //大圖輪播區 end//        
 
         .basemap
             h2 攝影作品
@@ -47,18 +55,19 @@ html(lang="en")
                         a(href="") 婚 紗 攝 影
                     li 
                         a(href="") 家庭&閨蜜寫真
-
                     li 
-                        a(href="") 孕婦&嬰兒寫真                 
-            .img-overlay 
-                a(href="") 
-                    img(src="public/images/輪播_01.jpg", alt="")
-                a(href="") 
-                    img(src="public/images/輪播_02.jpg", alt="")
-                a(href="") 
-                    img(src="public/images/輪播_03.jpg", alt="")
+                        a(href="") 孕婦&嬰兒寫真
+            .banner
+                img(src="public/images/輪播_01.jpg", alt="")
+                img(src="public/images/輪播_02.jpg", alt="")
+                img(src="public/images/輪播_03.jpg", alt="")
             h5 
                 a(href="")  欣賞更多   
+                             
+            //- .img-overlay 
+            //-         img(src="public/images/輪播_01.jpg", alt="")
+            //-         img(src="public/images/輪播_02.jpg", alt="")
+            //-         img(src="public/images/輪播_03.jpg", alt="")
 
         // content start
         
@@ -129,9 +138,13 @@ html(lang="en")
             p  © 2022 MONI WEDDING, LLC. All Rights Reserved.
         //footer end
         script(src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous')
-        script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js")
-        script(src="public/js/WOW-master/dist/wow.min.js")
+        //- script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js")
+        //- script(src="public/js/WOW-master/dist/wow.min.js")
+        script(src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js") 
         script(src="public/js/index-script.js")
+    
+      
+       
                     
 
         

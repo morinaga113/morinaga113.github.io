@@ -1,5 +1,5 @@
 .news {
-  max-width: 1200px;
+  max-width: 1100px;
 }
 
 .container h2 {
@@ -9,12 +9,6 @@
 
 .row {
   flex-wrap: nowrap;
-  align-items: center;
-  line-height: 30px;
-}
-
-.row > .left > img {
-  max-width: 100%;
 }
 
 .left {
@@ -24,24 +18,29 @@
 
 .left img {
   width: 100%;
+  margin-bottom: 20px;
   cursor: pointer;
+}
+
+.right-center {
+  align-items: center;
 }
 
 .right {
   width: 50%;
-  margin-left: 80px;
+  margin-left: 5%;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.right h4 {
+  letter-spacing: 1px;
+  font-size: 16px;
 }
 
 .right h3 {
   letter-spacing: 1px;
   font-size: 24px;
   margin: 5px 0;
-}
-
-.right h4 {
-  letter-spacing: 1px;
-  font-size: 16px;
 }
 
 .right p {
@@ -58,8 +57,6 @@
 @media (max-width: 767px) {
   .row {
     flex-wrap: wrap;
-    align-items: center;
-    line-height: 30px;
   }
 
   .left {
