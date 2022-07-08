@@ -397,7 +397,7 @@ header > .container nav > ul > li:nth-child(3) {
 
 .basemap {
   background-color: rgb(255, 255, 255);
-  height: 1100px;
+  height: 980px;
 }
 
 .basemap h2 {
@@ -634,7 +634,7 @@ body {
   }
 
   .basemap {
-    height: 770px;
+    height: 720px;
   }
 
   .basemap h2 {
@@ -659,7 +659,7 @@ body {
   }
 
   .basemap h5 {
-    margin-top: 20px;
+    margin-top: 5px;
   }
 
   .img-overlay {
