@@ -3,12 +3,18 @@
 }
 
 .col-6.col-md-3.col-lg-2 > a > img {
+  -webkit-filter: grayscale(95%);
+          filter: grayscale(95%);
+  opacity: 0.9;
   width: 100%;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 .col-6.col-md-3.col-lg-2 > a > img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  opacity: 1;
   background-color: black;
   -webkit-transform: scale(1.18);
           transform: scale(1.18);

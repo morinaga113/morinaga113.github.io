@@ -30,56 +30,48 @@ body {
   }
 }
 .box1 {
-  background-color: red;
   grid-area: a;
   background-image: url(../../images/店觀/01.jpg);
   background-size: cover;
 }
 
 .box2 {
-  background-color: rgb(235, 170, 31);
   grid-area: b;
   background-image: url(../../images/店觀/02.jpg);
   background-size: cover;
 }
 
 .box3 {
-  background-color: rgb(235, 222, 31);
   grid-area: c;
   background-image: url(../../images/店觀/03.jpg);
   background-size: cover;
 }
 
 .box4 {
-  background-color: rgb(123, 235, 31);
   grid-area: d;
   background-image: url(../../images/店觀/04.jpg);
   background-size: cover;
 }
 
 .box5 {
-  background-color: rgb(31, 204, 235);
   grid-area: e;
   background-image: url(../../images/店觀/05.jpg);
   background-size: cover;
 }
 
 .box6 {
-  background-color: rgb(31, 119, 235);
   grid-area: f;
   background-image: url(../../images/店觀/06.jpg);
   background-size: cover;
 }
 
 .box7 {
-  background-color: rgb(177, 31, 235);
   grid-area: g;
   background-image: url(../../images/店觀/07.jpg);
   background-size: cover;
 }
 
 .box8 {
-  background-color: rgb(235, 31, 126);
   grid-area: h;
   background-image: url(../../images/店觀/08.jpg);
   background-size: cover;
