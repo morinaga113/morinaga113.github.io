@@ -17,12 +17,10 @@ body {
     margin-bottom: 20px;
     padding-top: -20px;
   }
-
   .row {
     display: block;
     flex-wrap: nowrap;
   }
-
   .col-12 {
     width: 100%;
   }

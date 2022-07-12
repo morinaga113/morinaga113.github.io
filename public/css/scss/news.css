@@ -58,23 +58,19 @@
   .row {
     flex-wrap: wrap;
   }
-
   .left {
     margin-bottom: 10px;
     width: 100%;
   }
-
   .right {
     width: 100%;
     margin: 0;
   }
-
   .right h4 {
     font-size: small;
     margin-top: 10px;
     letter-spacing: 1px;
   }
-
   .right h5 {
     margin-top: 10px;
     margin-bottom: 60px;
